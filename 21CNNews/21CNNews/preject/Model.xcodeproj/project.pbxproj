@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54092564170DDEC7006B95D8 /* NewChannelNotificationKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 54092563170DDEC7006B95D8 /* NewChannelNotificationKeys.h */; };
+		54092586170DEAE8006B95D8 /* iPhoneTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 54092584170DEAE8006B95D8 /* iPhoneTools.h */; };
+		54092587170DEAE8006B95D8 /* iPhoneTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 54092585170DEAE8006B95D8 /* iPhoneTools.m */; };
+		5409258C170DED95006B95D8 /* UserSerialNumManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5409258A170DED95006B95D8 /* UserSerialNumManager.h */; };
+		5409258D170DED95006B95D8 /* UserSerialNumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5409258B170DED95006B95D8 /* UserSerialNumManager.m */; };
+		54092590170DEF5E006B95D8 /* ServicerDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5409258F170DEF5E006B95D8 /* ServicerDefine.h */; };
+		54092592170DF159006B95D8 /* ServicerCommonKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 54092591170DF159006B95D8 /* ServicerCommonKey.h */; };
+		54092599170DF394006B95D8 /* UserSerialNumJSDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 54092597170DF393006B95D8 /* UserSerialNumJSDataParser.h */; };
+		5409259A170DF394006B95D8 /* UserSerialNumJSDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 54092598170DF393006B95D8 /* UserSerialNumJSDataParser.m */; };
+		541B919F170FF59500307FE0 /* NewsListManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 541B919D170FF59500307FE0 /* NewsListManager.h */; };
+		541B91A0170FF59500307FE0 /* NewsListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 541B919E170FF59500307FE0 /* NewsListManager.m */; };
+		541B91A3170FF63100307FE0 /* NewsListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 541B91A1170FF63100307FE0 /* NewsListItem.h */; };
+		541B91A4170FF63100307FE0 /* NewsListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 541B91A2170FF63100307FE0 /* NewsListItem.m */; };
+		541B91A7170FF78F00307FE0 /* ReviewListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 541B91A5170FF78F00307FE0 /* ReviewListItem.h */; };
+		541B91A8170FF78F00307FE0 /* ReviewListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 541B91A6170FF78F00307FE0 /* ReviewListItem.m */; };
+		541B91AB1710070900307FE0 /* NewsListJSDataPaser.h in Headers */ = {isa = PBXBuildFile; fileRef = 541B91A91710070900307FE0 /* NewsListJSDataPaser.h */; };
+		541B91AC1710070900307FE0 /* NewsListJSDataPaser.m in Sources */ = {isa = PBXBuildFile; fileRef = 541B91AA1710070900307FE0 /* NewsListJSDataPaser.m */; };
+		541B91B21710173500307FE0 /* NewListNotificationKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 541B91B11710173400307FE0 /* NewListNotificationKeys.h */; };
+		5425135717117A6500793F9C /* NewsListCommonDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 5425135617117A6200793F9C /* NewsListCommonDef.h */; };
+		54CDFE31170D501400A4E7B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CDFE30170D501400A4E7B7 /* Foundation.framework */; };
+		54CDFE7A170D525E00A4E7B7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE71170D525E00A4E7B7 /* FMDatabase.m */; };
+		54CDFE7B170D525E00A4E7B7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE73170D525E00A4E7B7 /* FMDatabaseAdditions.m */; };
+		54CDFE7C170D525E00A4E7B7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE75170D525E00A4E7B7 /* FMDatabasePool.m */; };
+		54CDFE7D170D525E00A4E7B7 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE77170D525E00A4E7B7 /* FMDatabaseQueue.m */; };
+		54CDFE7E170D525E00A4E7B7 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE79170D525E00A4E7B7 /* FMResultSet.m */; };
+		54CDFE86170D550100A4E7B7 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE85170D550100A4E7B7 /* DBManager.m */; };
+		54CDFE89170D552C00A4E7B7 /* DbFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE88170D552C00A4E7B7 /* DbFileManager.m */; };
+		54CDFE8F170D5D2100A4E7B7 /* NewsChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE8E170D5D2100A4E7B7 /* NewsChannelManager.m */; };
+		54CDFE92170D5D5900A4E7B7 /* NewsChannelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE91170D5D5900A4E7B7 /* NewsChannelObject.m */; };
+		54CDFE95170D5D7B00A4E7B7 /* NewChannelList.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE94170D5D7B00A4E7B7 /* NewChannelList.m */; };
+		54CDFE9F170D669400A4E7B7 /* DBCommonHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE9D170D664E00A4E7B7 /* DBCommonHeader.h */; };
+		54CDFEA0170D669400A4E7B7 /* DbFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE87170D552C00A4E7B7 /* DbFileManager.h */; };
+		54CDFEA1170D669400A4E7B7 /* DBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE84170D550100A4E7B7 /* DBManager.h */; };
+		54CDFEA2170D669400A4E7B7 /* NewsChannelObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE90170D5D5900A4E7B7 /* NewsChannelObject.h */; };
+		54CDFEA3170D669400A4E7B7 /* NewChannelList.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE93170D5D7B00A4E7B7 /* NewChannelList.h */; };
+		54CDFEA4170D669400A4E7B7 /* NewsChannelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE8D170D5D2100A4E7B7 /* NewsChannelManager.h */; };
+		54CDFEA5170D669400A4E7B7 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE70170D525E00A4E7B7 /* FMDatabase.h */; };
+		54CDFEA6170D669400A4E7B7 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE72170D525E00A4E7B7 /* FMDatabaseAdditions.h */; };
+		54CDFEA7170D669400A4E7B7 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE74170D525E00A4E7B7 /* FMDatabasePool.h */; };
+		54CDFEA8170D669400A4E7B7 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE76170D525E00A4E7B7 /* FMDatabaseQueue.h */; };
+		54CDFEA9170D669400A4E7B7 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFE78170D525E00A4E7B7 /* FMResultSet.h */; };
+		54CDFED2170D7AD400A4E7B7 /* LSInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFEC2170D7AD400A4E7B7 /* LSInvocation.h */; };
+		54CDFED3170D7AD400A4E7B7 /* LSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFEC3170D7AD400A4E7B7 /* LSInvocation.m */; };
+		54CDFED4170D7AD400A4E7B7 /* LSThreadPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFEC4170D7AD400A4E7B7 /* LSThreadPool.h */; };
+		54CDFED5170D7AD400A4E7B7 /* LSThreadPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFEC5170D7AD400A4E7B7 /* LSThreadPool.m */; };
+		54CDFED6170D7AD400A4E7B7 /* LSThreadPoolThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFEC6170D7AD400A4E7B7 /* LSThreadPoolThread.h */; };
+		54CDFED7170D7AD400A4E7B7 /* LSThreadPoolThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFEC7170D7AD400A4E7B7 /* LSThreadPoolThread.m */; };
+		54CDFED8170D7AD400A4E7B7 /* LSTimerThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFEC8170D7AD400A4E7B7 /* LSTimerThread.h */; };
+		54CDFED9170D7AD400A4E7B7 /* LSTimerThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFEC9170D7AD400A4E7B7 /* LSTimerThread.m */; };
+		54CDFEDA170D7AD400A4E7B7 /* LSURLDispatchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFECA170D7AD400A4E7B7 /* LSURLDispatchDelegate.h */; };
+		54CDFEDB170D7AD400A4E7B7 /* LSURLDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFECB170D7AD400A4E7B7 /* LSURLDispatcher.h */; };
+		54CDFEDC170D7AD400A4E7B7 /* LSURLDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFECC170D7AD400A4E7B7 /* LSURLDispatcher.m */; };
+		54CDFEDD170D7AD400A4E7B7 /* LSURLDispatcherThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFECD170D7AD400A4E7B7 /* LSURLDispatcherThread.h */; };
+		54CDFEDE170D7AD400A4E7B7 /* LSURLDispatcherThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFECE170D7AD400A4E7B7 /* LSURLDispatcherThread.m */; };
+		54CDFEDF170D7AD400A4E7B7 /* LSURLDispatchOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFECF170D7AD400A4E7B7 /* LSURLDispatchOperation.h */; };
+		54CDFEE0170D7AD400A4E7B7 /* LSURLDispatchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFED0170D7AD400A4E7B7 /* LSURLDispatchOperation.m */; };
+		54CDFEE9170D825300A4E7B7 /* NewsChannelJSDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFEE7170D825300A4E7B7 /* NewsChannelJSDataParser.h */; };
+		54CDFEEA170D825300A4E7B7 /* NewsChannelJSDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFEE8170D825300A4E7B7 /* NewsChannelJSDataParser.m */; };
+		54CDFEEE170D82F200A4E7B7 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFEEC170D82F200A4E7B7 /* JSONKit.h */; };
+		54CDFEEF170D82F200A4E7B7 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFEED170D82F200A4E7B7 /* JSONKit.m */; };
+		54E9F9A4170EAA9C00D7B8D9 /* InitManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9F9A2170EAA9C00D7B8D9 /* InitManager.h */; };
+		54E9F9A5170EAA9C00D7B8D9 /* InitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9F9A3170EAA9C00D7B8D9 /* InitManager.m */; };
+		54E9F9D6170EC6BD00D7B8D9 /* SplashManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9F9D4170EC6BD00D7B8D9 /* SplashManager.h */; };
+		54E9F9D7170EC6BD00D7B8D9 /* SplashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9F9D5170EC6BD00D7B8D9 /* SplashManager.m */; };
+		54E9F9F0170ED03100D7B8D9 /* ImageLoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9F9EE170ED03100D7B8D9 /* ImageLoder.h */; };
+		54E9F9F1170ED03100D7B8D9 /* ImageLoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9F9EF170ED03100D7B8D9 /* ImageLoder.m */; };
+		54E9FA02170EF75800D7B8D9 /* SettingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9FA00170EF75800D7B8D9 /* SettingManager.h */; };
+		54E9FA03170EF75800D7B8D9 /* SettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9FA01170EF75800D7B8D9 /* SettingManager.m */; };
+		54E9FA05170EF8E200D7B8D9 /* SettingKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9FA04170EF8E200D7B8D9 /* SettingKey.h */; };
+		54E9FA14170F063300D7B8D9 /* SettingCellObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9FA12170F063300D7B8D9 /* SettingCellObject.h */; };
+		54E9FA15170F063300D7B8D9 /* SettingCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9FA13170F063300D7B8D9 /* SettingCellObject.m */; };
+		54E9FA17170F0E1800D7B8D9 /* SettingCommandKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9FA16170F0E1800D7B8D9 /* SettingCommandKey.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54CDFE2B170D501400A4E7B7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		54092563170DDEC7006B95D8 /* NewChannelNotificationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewChannelNotificationKeys.h; sourceTree = "<group>"; };
+		54092584170DEAE8006B95D8 /* iPhoneTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneTools.h; sourceTree = "<group>"; };
+		54092585170DEAE8006B95D8 /* iPhoneTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneTools.m; sourceTree = "<group>"; };
+		5409258A170DED95006B95D8 /* UserSerialNumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSerialNumManager.h; sourceTree = "<group>"; };
+		5409258B170DED95006B95D8 /* UserSerialNumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSerialNumManager.m; sourceTree = "<group>"; };
+		5409258F170DEF5E006B95D8 /* ServicerDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicerDefine.h; sourceTree = "<group>"; };
+		54092591170DF159006B95D8 /* ServicerCommonKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicerCommonKey.h; sourceTree = "<group>"; };
+		54092597170DF393006B95D8 /* UserSerialNumJSDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSerialNumJSDataParser.h; sourceTree = "<group>"; };
+		54092598170DF393006B95D8 /* UserSerialNumJSDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSerialNumJSDataParser.m; sourceTree = "<group>"; };
+		541B919D170FF59500307FE0 /* NewsListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListManager.h; sourceTree = "<group>"; };
+		541B919E170FF59500307FE0 /* NewsListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListManager.m; sourceTree = "<group>"; };
+		541B91A1170FF63100307FE0 /* NewsListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListItem.h; sourceTree = "<group>"; };
+		541B91A2170FF63100307FE0 /* NewsListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListItem.m; sourceTree = "<group>"; };
+		541B91A5170FF78F00307FE0 /* ReviewListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewListItem.h; sourceTree = "<group>"; };
+		541B91A6170FF78F00307FE0 /* ReviewListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewListItem.m; sourceTree = "<group>"; };
+		541B91A91710070900307FE0 /* NewsListJSDataPaser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListJSDataPaser.h; sourceTree = "<group>"; };
+		541B91AA1710070900307FE0 /* NewsListJSDataPaser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListJSDataPaser.m; sourceTree = "<group>"; };
+		541B91B11710173400307FE0 /* NewListNotificationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewListNotificationKeys.h; sourceTree = "<group>"; };
+		5425135617117A6200793F9C /* NewsListCommonDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsListCommonDef.h; sourceTree = "<group>"; };
+		54CDFE2D170D501400A4E7B7 /* libModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CDFE30170D501400A4E7B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54CDFE70170D525E00A4E7B7 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		54CDFE71170D525E00A4E7B7 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		54CDFE72170D525E00A4E7B7 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		54CDFE73170D525E00A4E7B7 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		54CDFE74170D525E00A4E7B7 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		54CDFE75170D525E00A4E7B7 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		54CDFE76170D525E00A4E7B7 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		54CDFE77170D525E00A4E7B7 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		54CDFE78170D525E00A4E7B7 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		54CDFE79170D525E00A4E7B7 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		54CDFE84170D550100A4E7B7 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		54CDFE85170D550100A4E7B7 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		54CDFE87170D552C00A4E7B7 /* DbFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbFileManager.h; sourceTree = "<group>"; };
+		54CDFE88170D552C00A4E7B7 /* DbFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbFileManager.m; sourceTree = "<group>"; };
+		54CDFE8D170D5D2100A4E7B7 /* NewsChannelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsChannelManager.h; sourceTree = "<group>"; };
+		54CDFE8E170D5D2100A4E7B7 /* NewsChannelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsChannelManager.m; sourceTree = "<group>"; };
+		54CDFE90170D5D5900A4E7B7 /* NewsChannelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsChannelObject.h; sourceTree = "<group>"; };
+		54CDFE91170D5D5900A4E7B7 /* NewsChannelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsChannelObject.m; sourceTree = "<group>"; };
+		54CDFE93170D5D7B00A4E7B7 /* NewChannelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewChannelList.h; sourceTree = "<group>"; };
+		54CDFE94170D5D7B00A4E7B7 /* NewChannelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewChannelList.m; sourceTree = "<group>"; };
+		54CDFE9D170D664E00A4E7B7 /* DBCommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCommonHeader.h; sourceTree = "<group>"; };
+		54CDFEC2170D7AD400A4E7B7 /* LSInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSInvocation.h; sourceTree = "<group>"; };
+		54CDFEC3170D7AD400A4E7B7 /* LSInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSInvocation.m; sourceTree = "<group>"; };
+		54CDFEC4170D7AD400A4E7B7 /* LSThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSThreadPool.h; sourceTree = "<group>"; };
+		54CDFEC5170D7AD400A4E7B7 /* LSThreadPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSThreadPool.m; sourceTree = "<group>"; };
+		54CDFEC6170D7AD400A4E7B7 /* LSThreadPoolThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSThreadPoolThread.h; sourceTree = "<group>"; };
+		54CDFEC7170D7AD400A4E7B7 /* LSThreadPoolThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSThreadPoolThread.m; sourceTree = "<group>"; };
+		54CDFEC8170D7AD400A4E7B7 /* LSTimerThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTimerThread.h; sourceTree = "<group>"; };
+		54CDFEC9170D7AD400A4E7B7 /* LSTimerThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTimerThread.m; sourceTree = "<group>"; };
+		54CDFECA170D7AD400A4E7B7 /* LSURLDispatchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSURLDispatchDelegate.h; sourceTree = "<group>"; };
+		54CDFECB170D7AD400A4E7B7 /* LSURLDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSURLDispatcher.h; sourceTree = "<group>"; };
+		54CDFECC170D7AD400A4E7B7 /* LSURLDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSURLDispatcher.m; sourceTree = "<group>"; };
+		54CDFECD170D7AD400A4E7B7 /* LSURLDispatcherThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSURLDispatcherThread.h; sourceTree = "<group>"; };
+		54CDFECE170D7AD400A4E7B7 /* LSURLDispatcherThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSURLDispatcherThread.m; sourceTree = "<group>"; };
+		54CDFECF170D7AD400A4E7B7 /* LSURLDispatchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSURLDispatchOperation.h; sourceTree = "<group>"; };
+		54CDFED0170D7AD400A4E7B7 /* LSURLDispatchOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSURLDispatchOperation.m; sourceTree = "<group>"; };
+		54CDFEE7170D825300A4E7B7 /* NewsChannelJSDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsChannelJSDataParser.h; sourceTree = "<group>"; };
+		54CDFEE8170D825300A4E7B7 /* NewsChannelJSDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsChannelJSDataParser.m; sourceTree = "<group>"; };
+		54CDFEEC170D82F200A4E7B7 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		54CDFEED170D82F200A4E7B7 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		54E9F9A2170EAA9C00D7B8D9 /* InitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitManager.h; sourceTree = "<group>"; };
+		54E9F9A3170EAA9C00D7B8D9 /* InitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitManager.m; sourceTree = "<group>"; };
+		54E9F9D4170EC6BD00D7B8D9 /* SplashManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashManager.h; sourceTree = "<group>"; };
+		54E9F9D5170EC6BD00D7B8D9 /* SplashManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashManager.m; sourceTree = "<group>"; };
+		54E9F9EE170ED03100D7B8D9 /* ImageLoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoder.h; sourceTree = "<group>"; };
+		54E9F9EF170ED03100D7B8D9 /* ImageLoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLoder.m; sourceTree = "<group>"; };
+		54E9FA00170EF75800D7B8D9 /* SettingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingManager.h; sourceTree = "<group>"; };
+		54E9FA01170EF75800D7B8D9 /* SettingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingManager.m; sourceTree = "<group>"; };
+		54E9FA04170EF8E200D7B8D9 /* SettingKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingKey.h; sourceTree = "<group>"; };
+		54E9FA12170F063300D7B8D9 /* SettingCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCellObject.h; sourceTree = "<group>"; };
+		54E9FA13170F063300D7B8D9 /* SettingCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCellObject.m; sourceTree = "<group>"; };
+		54E9FA16170F0E1800D7B8D9 /* SettingCommandKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommandKey.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54CDFE2A170D501400A4E7B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CDFE31170D501400A4E7B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54092583170DEAE8006B95D8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				54092584170DEAE8006B95D8 /* iPhoneTools.h */,
+				54092585170DEAE8006B95D8 /* iPhoneTools.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		54092589170DED65006B95D8 /* UserSerialNum */ = {
+			isa = PBXGroup;
+			children = (
+				54092597170DF393006B95D8 /* UserSerialNumJSDataParser.h */,
+				54092598170DF393006B95D8 /* UserSerialNumJSDataParser.m */,
+				5409258A170DED95006B95D8 /* UserSerialNumManager.h */,
+				5409258B170DED95006B95D8 /* UserSerialNumManager.m */,
+			);
+			path = UserSerialNum;
+			sourceTree = "<group>";
+		};
+		5409258E170DEF19006B95D8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5409258F170DEF5E006B95D8 /* ServicerDefine.h */,
+				54092591170DF159006B95D8 /* ServicerCommonKey.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		541B919C170FF56B00307FE0 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				5425135617117A6200793F9C /* NewsListCommonDef.h */,
+				541B91A5170FF78F00307FE0 /* ReviewListItem.h */,
+				541B91A6170FF78F00307FE0 /* ReviewListItem.m */,
+				541B91A1170FF63100307FE0 /* NewsListItem.h */,
+				541B91A2170FF63100307FE0 /* NewsListItem.m */,
+				541B91A91710070900307FE0 /* NewsListJSDataPaser.h */,
+				541B91AA1710070900307FE0 /* NewsListJSDataPaser.m */,
+				541B91B11710173400307FE0 /* NewListNotificationKeys.h */,
+				541B919D170FF59500307FE0 /* NewsListManager.h */,
+				541B919E170FF59500307FE0 /* NewsListManager.m */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		54CDFE24170D501400A4E7B7 = {
+			isa = PBXGroup;
+			children = (
+				54CDFE5B170D517300A4E7B7 /* Classes */,
+				54CDFE2F170D501400A4E7B7 /* Frameworks */,
+				54CDFE2E170D501400A4E7B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54CDFE2E170D501400A4E7B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54CDFE2D170D501400A4E7B7 /* libModel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54CDFE2F170D501400A4E7B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54CDFE30170D501400A4E7B7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54CDFE5B170D517300A4E7B7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				54CDFE7F170D526D00A4E7B7 /* Manager */,
+				54CDFE6E170D525E00A4E7B7 /* Model */,
+			);
+			name = Classes;
+			path = ../Classes/Model;
+			sourceTree = "<group>";
+		};
+		54CDFE6E170D525E00A4E7B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54092583170DEAE8006B95D8 /* Common */,
+				54CDFEEB170D82F200A4E7B7 /* JSONKit */,
+				54CDFEC0170D7AD400A4E7B7 /* Lightstreamer Thread Pool Library */,
+				54CDFE6F170D525E00A4E7B7 /* fmdb */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		54CDFE6F170D525E00A4E7B7 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				54CDFE70170D525E00A4E7B7 /* FMDatabase.h */,
+				54CDFE71170D525E00A4E7B7 /* FMDatabase.m */,
+				54CDFE72170D525E00A4E7B7 /* FMDatabaseAdditions.h */,
+				54CDFE73170D525E00A4E7B7 /* FMDatabaseAdditions.m */,
+				54CDFE74170D525E00A4E7B7 /* FMDatabasePool.h */,
+				54CDFE75170D525E00A4E7B7 /* FMDatabasePool.m */,
+				54CDFE76170D525E00A4E7B7 /* FMDatabaseQueue.h */,
+				54CDFE77170D525E00A4E7B7 /* FMDatabaseQueue.m */,
+				54CDFE78170D525E00A4E7B7 /* FMResultSet.h */,
+				54CDFE79170D525E00A4E7B7 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		54CDFE7F170D526D00A4E7B7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				54E9F9A1170EAA8500D7B8D9 /* init */,
+				5409258E170DEF19006B95D8 /* Common */,
+				54CDFE83170D550100A4E7B7 /* DB */,
+				54092589170DED65006B95D8 /* UserSerialNum */,
+				54CDFE8C170D5CFB00A4E7B7 /* NewsChannel */,
+				54E9F9D3170EC69B00D7B8D9 /* splash */,
+				541B919C170FF56B00307FE0 /* NewsList */,
+				54E9F9FF170EF74100D7B8D9 /* setting */,
+			);
+			name = Manager;
+			path = ../Manager;
+			sourceTree = "<group>";
+		};
+		54CDFE83170D550100A4E7B7 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				54CDFE9D170D664E00A4E7B7 /* DBCommonHeader.h */,
+				54CDFE87170D552C00A4E7B7 /* DbFileManager.h */,
+				54CDFE88170D552C00A4E7B7 /* DbFileManager.m */,
+				54CDFE84170D550100A4E7B7 /* DBManager.h */,
+				54CDFE85170D550100A4E7B7 /* DBManager.m */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		54CDFE8C170D5CFB00A4E7B7 /* NewsChannel */ = {
+			isa = PBXGroup;
+			children = (
+				54092563170DDEC7006B95D8 /* NewChannelNotificationKeys.h */,
+				54CDFEE7170D825300A4E7B7 /* NewsChannelJSDataParser.h */,
+				54CDFEE8170D825300A4E7B7 /* NewsChannelJSDataParser.m */,
+				54CDFE90170D5D5900A4E7B7 /* NewsChannelObject.h */,
+				54CDFE91170D5D5900A4E7B7 /* NewsChannelObject.m */,
+				54CDFE93170D5D7B00A4E7B7 /* NewChannelList.h */,
+				54CDFE94170D5D7B00A4E7B7 /* NewChannelList.m */,
+				54CDFE8D170D5D2100A4E7B7 /* NewsChannelManager.h */,
+				54CDFE8E170D5D2100A4E7B7 /* NewsChannelManager.m */,
+			);
+			path = NewsChannel;
+			sourceTree = "<group>";
+		};
+		54CDFEC0170D7AD400A4E7B7 /* Lightstreamer Thread Pool Library */ = {
+			isa = PBXGroup;
+			children = (
+				54CDFEC2170D7AD400A4E7B7 /* LSInvocation.h */,
+				54CDFEC3170D7AD400A4E7B7 /* LSInvocation.m */,
+				54CDFEC4170D7AD400A4E7B7 /* LSThreadPool.h */,
+				54CDFEC5170D7AD400A4E7B7 /* LSThreadPool.m */,
+				54CDFEC6170D7AD400A4E7B7 /* LSThreadPoolThread.h */,
+				54CDFEC7170D7AD400A4E7B7 /* LSThreadPoolThread.m */,
+				54CDFEC8170D7AD400A4E7B7 /* LSTimerThread.h */,
+				54CDFEC9170D7AD400A4E7B7 /* LSTimerThread.m */,
+				54CDFECA170D7AD400A4E7B7 /* LSURLDispatchDelegate.h */,
+				54CDFECB170D7AD400A4E7B7 /* LSURLDispatcher.h */,
+				54CDFECC170D7AD400A4E7B7 /* LSURLDispatcher.m */,
+				54CDFECD170D7AD400A4E7B7 /* LSURLDispatcherThread.h */,
+				54CDFECE170D7AD400A4E7B7 /* LSURLDispatcherThread.m */,
+				54CDFECF170D7AD400A4E7B7 /* LSURLDispatchOperation.h */,
+				54CDFED0170D7AD400A4E7B7 /* LSURLDispatchOperation.m */,
+			);
+			path = "Lightstreamer Thread Pool Library";
+			sourceTree = "<group>";
+		};
+		54CDFEEB170D82F200A4E7B7 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				54CDFEEC170D82F200A4E7B7 /* JSONKit.h */,
+				54CDFEED170D82F200A4E7B7 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		54E9F9A1170EAA8500D7B8D9 /* init */ = {
+			isa = PBXGroup;
+			children = (
+				54E9F9A2170EAA9C00D7B8D9 /* InitManager.h */,
+				54E9F9A3170EAA9C00D7B8D9 /* InitManager.m */,
+			);
+			path = init;
+			sourceTree = "<group>";
+		};
+		54E9F9D3170EC69B00D7B8D9 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				54E9F9EE170ED03100D7B8D9 /* ImageLoder.h */,
+				54E9F9EF170ED03100D7B8D9 /* ImageLoder.m */,
+				54E9F9D4170EC6BD00D7B8D9 /* SplashManager.h */,
+				54E9F9D5170EC6BD00D7B8D9 /* SplashManager.m */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		54E9F9FF170EF74100D7B8D9 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				54E9FA04170EF8E200D7B8D9 /* SettingKey.h */,
+				54E9FA16170F0E1800D7B8D9 /* SettingCommandKey.h */,
+				54E9FA12170F063300D7B8D9 /* SettingCellObject.h */,
+				54E9FA13170F063300D7B8D9 /* SettingCellObject.m */,
+				54E9FA00170EF75800D7B8D9 /* SettingManager.h */,
+				54E9FA01170EF75800D7B8D9 /* SettingManager.m */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		54CDFE9E170D668000A4E7B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CDFE9F170D669400A4E7B7 /* DBCommonHeader.h in Headers */,
+				54CDFEA0170D669400A4E7B7 /* DbFileManager.h in Headers */,
+				54CDFEA1170D669400A4E7B7 /* DBManager.h in Headers */,
+				54CDFEA2170D669400A4E7B7 /* NewsChannelObject.h in Headers */,
+				54CDFEA3170D669400A4E7B7 /* NewChannelList.h in Headers */,
+				54CDFEA4170D669400A4E7B7 /* NewsChannelManager.h in Headers */,
+				54CDFEA5170D669400A4E7B7 /* FMDatabase.h in Headers */,
+				54CDFEA6170D669400A4E7B7 /* FMDatabaseAdditions.h in Headers */,
+				54CDFEA7170D669400A4E7B7 /* FMDatabasePool.h in Headers */,
+				54CDFEA8170D669400A4E7B7 /* FMDatabaseQueue.h in Headers */,
+				54CDFEA9170D669400A4E7B7 /* FMResultSet.h in Headers */,
+				54CDFED2170D7AD400A4E7B7 /* LSInvocation.h in Headers */,
+				54CDFED4170D7AD400A4E7B7 /* LSThreadPool.h in Headers */,
+				54CDFED6170D7AD400A4E7B7 /* LSThreadPoolThread.h in Headers */,
+				54CDFED8170D7AD400A4E7B7 /* LSTimerThread.h in Headers */,
+				54CDFEDA170D7AD400A4E7B7 /* LSURLDispatchDelegate.h in Headers */,
+				54CDFEDB170D7AD400A4E7B7 /* LSURLDispatcher.h in Headers */,
+				54CDFEDD170D7AD400A4E7B7 /* LSURLDispatcherThread.h in Headers */,
+				54CDFEDF170D7AD400A4E7B7 /* LSURLDispatchOperation.h in Headers */,
+				54CDFEE9170D825300A4E7B7 /* NewsChannelJSDataParser.h in Headers */,
+				54CDFEEE170D82F200A4E7B7 /* JSONKit.h in Headers */,
+				54092564170DDEC7006B95D8 /* NewChannelNotificationKeys.h in Headers */,
+				54092586170DEAE8006B95D8 /* iPhoneTools.h in Headers */,
+				5409258C170DED95006B95D8 /* UserSerialNumManager.h in Headers */,
+				54092590170DEF5E006B95D8 /* ServicerDefine.h in Headers */,
+				54092592170DF159006B95D8 /* ServicerCommonKey.h in Headers */,
+				54092599170DF394006B95D8 /* UserSerialNumJSDataParser.h in Headers */,
+				54E9F9A4170EAA9C00D7B8D9 /* InitManager.h in Headers */,
+				54E9F9D6170EC6BD00D7B8D9 /* SplashManager.h in Headers */,
+				54E9F9F0170ED03100D7B8D9 /* ImageLoder.h in Headers */,
+				54E9FA02170EF75800D7B8D9 /* SettingManager.h in Headers */,
+				54E9FA05170EF8E200D7B8D9 /* SettingKey.h in Headers */,
+				54E9FA14170F063300D7B8D9 /* SettingCellObject.h in Headers */,
+				54E9FA17170F0E1800D7B8D9 /* SettingCommandKey.h in Headers */,
+				541B919F170FF59500307FE0 /* NewsListManager.h in Headers */,
+				541B91A3170FF63100307FE0 /* NewsListItem.h in Headers */,
+				541B91A7170FF78F00307FE0 /* ReviewListItem.h in Headers */,
+				541B91AB1710070900307FE0 /* NewsListJSDataPaser.h in Headers */,
+				541B91B21710173500307FE0 /* NewListNotificationKeys.h in Headers */,
+				5425135717117A6500793F9C /* NewsListCommonDef.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		54CDFE2C170D501400A4E7B7 /* Model */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54CDFE3B170D501400A4E7B7 /* Build configuration list for PBXNativeTarget "Model" */;
+			buildPhases = (
+				54CDFE29170D501400A4E7B7 /* Sources */,
+				54CDFE2A170D501400A4E7B7 /* Frameworks */,
+				54CDFE2B170D501400A4E7B7 /* CopyFiles */,
+				54CDFE9E170D668000A4E7B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Model;
+			productName = Model;
+			productReference = 54CDFE2D170D501400A4E7B7 /* libModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54CDFE25170D501400A4E7B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = 21cn;
+			};
+			buildConfigurationList = 54CDFE28170D501400A4E7B7 /* Build configuration list for PBXProject "Model" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54CDFE24170D501400A4E7B7;
+			productRefGroup = 54CDFE2E170D501400A4E7B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54CDFE2C170D501400A4E7B7 /* Model */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54CDFE29170D501400A4E7B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CDFE7A170D525E00A4E7B7 /* FMDatabase.m in Sources */,
+				54CDFE7B170D525E00A4E7B7 /* FMDatabaseAdditions.m in Sources */,
+				54CDFE7C170D525E00A4E7B7 /* FMDatabasePool.m in Sources */,
+				54CDFE7D170D525E00A4E7B7 /* FMDatabaseQueue.m in Sources */,
+				54CDFE7E170D525E00A4E7B7 /* FMResultSet.m in Sources */,
+				54CDFE86170D550100A4E7B7 /* DBManager.m in Sources */,
+				54CDFE89170D552C00A4E7B7 /* DbFileManager.m in Sources */,
+				54CDFE8F170D5D2100A4E7B7 /* NewsChannelManager.m in Sources */,
+				54CDFE92170D5D5900A4E7B7 /* NewsChannelObject.m in Sources */,
+				54CDFE95170D5D7B00A4E7B7 /* NewChannelList.m in Sources */,
+				54CDFED3170D7AD400A4E7B7 /* LSInvocation.m in Sources */,
+				54CDFED5170D7AD400A4E7B7 /* LSThreadPool.m in Sources */,
+				54CDFED7170D7AD400A4E7B7 /* LSThreadPoolThread.m in Sources */,
+				54CDFED9170D7AD400A4E7B7 /* LSTimerThread.m in Sources */,
+				54CDFEDC170D7AD400A4E7B7 /* LSURLDispatcher.m in Sources */,
+				54CDFEDE170D7AD400A4E7B7 /* LSURLDispatcherThread.m in Sources */,
+				54CDFEE0170D7AD400A4E7B7 /* LSURLDispatchOperation.m in Sources */,
+				54CDFEEA170D825300A4E7B7 /* NewsChannelJSDataParser.m in Sources */,
+				54CDFEEF170D82F200A4E7B7 /* JSONKit.m in Sources */,
+				54092587170DEAE8006B95D8 /* iPhoneTools.m in Sources */,
+				5409258D170DED95006B95D8 /* UserSerialNumManager.m in Sources */,
+				5409259A170DF394006B95D8 /* UserSerialNumJSDataParser.m in Sources */,
+				54E9F9A5170EAA9C00D7B8D9 /* InitManager.m in Sources */,
+				54E9F9D7170EC6BD00D7B8D9 /* SplashManager.m in Sources */,
+				54E9F9F1170ED03100D7B8D9 /* ImageLoder.m in Sources */,
+				54E9FA03170EF75800D7B8D9 /* SettingManager.m in Sources */,
+				54E9FA15170F063300D7B8D9 /* SettingCellObject.m in Sources */,
+				541B91A0170FF59500307FE0 /* NewsListManager.m in Sources */,
+				541B91A4170FF63100307FE0 /* NewsListItem.m in Sources */,
+				541B91A8170FF78F00307FE0 /* ReviewListItem.m in Sources */,
+				541B91AC1710070900307FE0 /* NewsListJSDataPaser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		54CDFE39170D501400A4E7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(SRCROOT)/../../build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54CDFE3A170D501400A4E7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(SRCROOT)/../../build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54CDFE3C170D501400A4E7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Model.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		54CDFE3D170D501400A4E7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Model.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54CDFE28170D501400A4E7B7 /* Build configuration list for PBXProject "Model" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CDFE39170D501400A4E7B7 /* Debug */,
+				54CDFE3A170D501400A4E7B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54CDFE3B170D501400A4E7B7 /* Build configuration list for PBXNativeTarget "Model" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CDFE3C170D501400A4E7B7 /* Debug */,
+				54CDFE3D170D501400A4E7B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54CDFE25170D501400A4E7B7 /* Project object */;
+}
