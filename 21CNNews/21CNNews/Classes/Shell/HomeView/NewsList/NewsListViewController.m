@@ -16,8 +16,10 @@
 #import "NewsChannelObject.h"
 #import "NewsChannelManager.h"
 #import "NewChannelNotificationKeys.h"
+#import "AriticleListViewDelegate.h"
+#import "NewsContentViewer.h"
 
-@interface NewsListViewController ()
+@interface NewsListViewController ()<AriticleListViewDelegate>
 
 @property (nonatomic, retain) UITitleView* titleView;
 @property (nonatomic, retain) ArticlelistViewController* articlelistViewController;
@@ -109,6 +111,7 @@
     }
     
     _articlelistViewController = [[ArticlelistViewController alloc] init];
+    _articlelistViewController.delegate = self;
     [_articlelistViewController showInViwe:self.view frame:CGRectMake(0, 48, self.view.frame.size.width, self.view.frame.size.height - 48)];
 }
 
@@ -169,6 +172,8 @@
         default:
             break;
     }
+    
+    [self.titleView setTitleText:channelObject.title];
 }
 
 
@@ -193,6 +198,14 @@
     {
         [self initData];
     }
+}
+
+
+- (void)ariticleListCellDidSelect:(int)ariticleID
+{
+    NewsContentViewer* viewer = [[NewsContentViewer alloc] init];
+    [viewer showInUIViewController:self articleID:ariticleID];
+    [viewer release];
 }
 
 

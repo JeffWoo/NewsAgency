@@ -108,10 +108,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SettingCellObject* object = [self.settingData objectAtIndex:indexPath.row];
+    
     if (object.command)
     {
         [[NSNotificationCenter defaultCenter] postNotificationName:object.command object:self userInfo:nil];
     }
+    
+    self.settingData = [[SettingManager shareInstance] getSettingData];
+    [self.tableView reloadData];
 }
 
 @end

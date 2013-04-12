@@ -139,6 +139,13 @@ char* getIMEI(char* buffer)
 }
 
 
++ (NSString *)cachePath
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    return [paths objectAtIndex:0];
+}
+
+
 + (BOOL)isFileExists:(NSString*)filePath
 {
 	return [[NSFileManager defaultManager] fileExistsAtPath:filePath];
@@ -181,8 +188,22 @@ char* getIMEI(char* buffer)
 
 + (NSString*)getCacheSize
 {
-    //TODO:
-    return @"......";
+    NSString* cachePath = [self cachePath];
+    NSString* fullPath = [NSString stringWithFormat:@"%@/com.news.21cn.-1CNNews/EGOCache", cachePath];
+    uint64_t size = [self fileSizeOnDisk:fullPath];
+    
+    if (size >= 102)
+    {
+        size -= 102;
+    }
+    
+    if (size >= 1024)
+    {
+        return [NSString stringWithFormat:@"%lldM", size / 1024];
+    }
+    
+        
+    return [NSString stringWithFormat:@"%lldK", size];
 }
 
 
@@ -190,5 +211,29 @@ char* getIMEI(char* buffer)
 {
     return @"v1.3版本";
 }
+
+
++ (uint64_t)fileSizeOnDisk:(NSString*)path
+{
+    if (path && [path length] > 0)
+    {
+        NSFileManager *manager = [[NSFileManager alloc] init];
+        NSDictionary *attributes = [manager attributesOfItemAtPath:path error:NULL];
+        [manager release];
+        if (attributes)
+        {
+            return [attributes fileSize];
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    else
+    {
+        return 0;
+    }
+}
+
 
 @end

@@ -153,7 +153,9 @@
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    NewsListItem* item = [self.newList objectAtIndex:indexPath.row];
+    
+    [self.delegate ariticleListCellDidSelect:item.articleId];
 }
 
 

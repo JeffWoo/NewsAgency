@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AriticleListViewDelegate.h"
+
 @class NewsChannelObject;
 
 @interface ArticlelistViewController : UIViewController
+
+@property (nonatomic, assign) id<AriticleListViewDelegate> delegate;
 
 - (void)showInViwe:(UIView*)parentView frame:(CGRect)frame;
 

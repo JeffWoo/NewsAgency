@@ -14,6 +14,8 @@
 
 + (NSString *)documentPath;
 
++ (NSString *)cachePath;
+
 + (BOOL)isFileExists:(NSString*)filePath;
 
 + (bool)isDirExists:(NSString*)dirPath;
@@ -25,5 +27,7 @@
 + (NSString*)getCacheSize;
 
 + (NSString*)getCurrentVersion;
+
++ (uint64_t)fileSizeOnDisk:(NSString*)path;
 
 @end

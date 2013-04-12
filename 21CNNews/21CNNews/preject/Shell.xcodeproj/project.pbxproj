@@ -36,6 +36,42 @@
 		5425137B17118CAA00793F9C /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 5425137517118CAA00793F9C /* WXApi.h */; };
 		5425137C17118CAA00793F9C /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5425137617118CAA00793F9C /* WXApiObject.h */; };
 		5425137D17118CAA00793F9C /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5425137717118CAA00793F9C /* ShareSDK.framework */; };
+		5425139B1711BC3A00793F9C /* ArticleContentObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 542513981711BC1600793F9C /* ArticleContentObject.h */; };
+		5425139C1711BC3A00793F9C /* ArticleContentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 542513991711BC1600793F9C /* ArticleContentManager.h */; };
+		5425139D1711BC3A00793F9C /* ArticleContentNotifyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 5425139A1711BC1600793F9C /* ArticleContentNotifyKey.h */; };
+		542513A41711C47100793F9C /* NewsContentViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 542513A21711C47100793F9C /* NewsContentViewer.h */; };
+		542513A51711C47100793F9C /* NewsContentViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 542513A31711C47100793F9C /* NewsContentViewer.m */; };
+		542513A71711CA4500793F9C /* AriticleListViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 542513A61711CA4500793F9C /* AriticleListViewDelegate.h */; };
+		54393BBF1713290F002E6F53 /* AGCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393BB51713290F002E6F53 /* AGCommon.framework */; };
+		54393BC01713290F002E6F53 /* QQApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393BB81713290F002E6F53 /* QQApi.framework */; };
+		54393BC11713290F002E6F53 /* libWeChatSDK_armv7_armv7s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393BBB1713290F002E6F53 /* libWeChatSDK_armv7_armv7s.a */; };
+		54393BC21713290F002E6F53 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 54393BBC1713290F002E6F53 /* WXApi.h */; };
+		54393BC31713290F002E6F53 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 54393BBD1713290F002E6F53 /* WXApiObject.h */; };
+		54393BC41713290F002E6F53 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393BBE1713290F002E6F53 /* ShareSDK.framework */; };
+		54393BCB17132B10002E6F53 /* IIViewDeckController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54393BC917132B10002E6F53 /* IIViewDeckController.h */; };
+		54393BCC17132B10002E6F53 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54393BCA17132B10002E6F53 /* IIViewDeckController.m */; };
+		54393BCF17132BD9002E6F53 /* IIWrapController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54393BCD17132BD9002E6F53 /* IIWrapController.h */; };
+		54393BD017132BD9002E6F53 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54393BCE17132BD9002E6F53 /* IIWrapController.m */; };
+		54A3EE501713280500297364 /* AGCustomAtPlatListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE3C1713280500297364 /* AGCustomAtPlatListViewController.h */; };
+		54A3EE511713280500297364 /* AGCustomAtPlatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE3D1713280500297364 /* AGCustomAtPlatListViewController.m */; };
+		54A3EE521713280500297364 /* AGCustomFriendListViewToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE3E1713280500297364 /* AGCustomFriendListViewToolbar.h */; };
+		54A3EE531713280500297364 /* AGCustomFriendListViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE3F1713280500297364 /* AGCustomFriendListViewToolbar.m */; };
+		54A3EE541713280500297364 /* AGCustomFriendsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE401713280500297364 /* AGCustomFriendsViewController.h */; };
+		54A3EE551713280500297364 /* AGCustomFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE411713280500297364 /* AGCustomFriendsViewController.m */; };
+		54A3EE561713280500297364 /* AGCustomMoreCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE421713280500297364 /* AGCustomMoreCell.h */; };
+		54A3EE571713280500297364 /* AGCustomMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE431713280500297364 /* AGCustomMoreCell.m */; };
+		54A3EE581713280500297364 /* AGCustomShareItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE441713280500297364 /* AGCustomShareItemView.h */; };
+		54A3EE591713280500297364 /* AGCustomShareItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE451713280500297364 /* AGCustomShareItemView.m */; };
+		54A3EE5A1713280500297364 /* AGCustomShareViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE461713280500297364 /* AGCustomShareViewController.h */; };
+		54A3EE5B1713280500297364 /* AGCustomShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE471713280500297364 /* AGCustomShareViewController.m */; };
+		54A3EE5C1713280500297364 /* AGCustomShareViewToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE481713280500297364 /* AGCustomShareViewToolbar.h */; };
+		54A3EE5D1713280500297364 /* AGCustomShareViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE491713280500297364 /* AGCustomShareViewToolbar.m */; };
+		54A3EE5E1713280500297364 /* AGCustomUserInfoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE4A1713280500297364 /* AGCustomUserInfoCell.h */; };
+		54A3EE5F1713280500297364 /* AGCustomUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE4B1713280500297364 /* AGCustomUserInfoCell.m */; };
+		54A3EE601713280500297364 /* AGCustomUserItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE4C1713280500297364 /* AGCustomUserItemView.h */; };
+		54A3EE611713280500297364 /* AGCustomUserItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE4D1713280500297364 /* AGCustomUserItemView.m */; };
+		54A3EE621713280500297364 /* AGCustomViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE4E1713280500297364 /* AGCustomViewController.h */; };
+		54A3EE631713280500297364 /* AGCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE4F1713280500297364 /* AGCustomViewController.m */; };
 		54CDFEB0170D70D500A4E7B7 /* NewsChannelObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFEAD170D708100A4E7B7 /* NewsChannelObject.h */; };
 		54CDFEB1170D70D500A4E7B7 /* NewChannelList.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFEAE170D708100A4E7B7 /* NewChannelList.h */; };
 		54CDFEB2170D70D500A4E7B7 /* NewsChannelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CDFEAC170D706E00A4E7B7 /* NewsChannelManager.h */; };
@@ -153,6 +189,44 @@
 		5425137517118CAA00793F9C /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		5425137617118CAA00793F9C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		5425137717118CAA00793F9C /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDK.framework; sourceTree = "<group>"; };
+		542513981711BC1600793F9C /* ArticleContentObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticleContentObject.h; path = ../Manager/ArticleContent/ArticleContentObject.h; sourceTree = "<group>"; };
+		542513991711BC1600793F9C /* ArticleContentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticleContentManager.h; path = ../Manager/ArticleContent/ArticleContentManager.h; sourceTree = "<group>"; };
+		5425139A1711BC1600793F9C /* ArticleContentNotifyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticleContentNotifyKey.h; path = ../Manager/ArticleContent/ArticleContentNotifyKey.h; sourceTree = "<group>"; };
+		542513A21711C47100793F9C /* NewsContentViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsContentViewer.h; sourceTree = "<group>"; };
+		542513A31711C47100793F9C /* NewsContentViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsContentViewer.m; sourceTree = "<group>"; };
+		542513A61711CA4500793F9C /* AriticleListViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AriticleListViewDelegate.h; sourceTree = "<group>"; };
+		54393BB51713290F002E6F53 /* AGCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGCommon.framework; sourceTree = "<group>"; };
+		54393BB71713290F002E6F53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ShareSDKLocalizable.strings; sourceTree = "<group>"; };
+		54393BB81713290F002E6F53 /* QQApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QQApi.framework; sourceTree = "<group>"; };
+		54393BB91713290F002E6F53 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
+		54393BBB1713290F002E6F53 /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
+		54393BBC1713290F002E6F53 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		54393BBD1713290F002E6F53 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		54393BBE1713290F002E6F53 /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDK.framework; sourceTree = "<group>"; };
+		54393BC917132B10002E6F53 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		54393BCA17132B10002E6F53 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		54393BCD17132BD9002E6F53 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		54393BCE17132BD9002E6F53 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		54A3EE3C1713280500297364 /* AGCustomAtPlatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomAtPlatListViewController.h; sourceTree = "<group>"; };
+		54A3EE3D1713280500297364 /* AGCustomAtPlatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomAtPlatListViewController.m; sourceTree = "<group>"; };
+		54A3EE3E1713280500297364 /* AGCustomFriendListViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomFriendListViewToolbar.h; sourceTree = "<group>"; };
+		54A3EE3F1713280500297364 /* AGCustomFriendListViewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomFriendListViewToolbar.m; sourceTree = "<group>"; };
+		54A3EE401713280500297364 /* AGCustomFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomFriendsViewController.h; sourceTree = "<group>"; };
+		54A3EE411713280500297364 /* AGCustomFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomFriendsViewController.m; sourceTree = "<group>"; };
+		54A3EE421713280500297364 /* AGCustomMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomMoreCell.h; sourceTree = "<group>"; };
+		54A3EE431713280500297364 /* AGCustomMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomMoreCell.m; sourceTree = "<group>"; };
+		54A3EE441713280500297364 /* AGCustomShareItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomShareItemView.h; sourceTree = "<group>"; };
+		54A3EE451713280500297364 /* AGCustomShareItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomShareItemView.m; sourceTree = "<group>"; };
+		54A3EE461713280500297364 /* AGCustomShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomShareViewController.h; sourceTree = "<group>"; };
+		54A3EE471713280500297364 /* AGCustomShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomShareViewController.m; sourceTree = "<group>"; };
+		54A3EE481713280500297364 /* AGCustomShareViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomShareViewToolbar.h; sourceTree = "<group>"; };
+		54A3EE491713280500297364 /* AGCustomShareViewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomShareViewToolbar.m; sourceTree = "<group>"; };
+		54A3EE4A1713280500297364 /* AGCustomUserInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomUserInfoCell.h; sourceTree = "<group>"; };
+		54A3EE4B1713280500297364 /* AGCustomUserInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomUserInfoCell.m; sourceTree = "<group>"; };
+		54A3EE4C1713280500297364 /* AGCustomUserItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomUserItemView.h; sourceTree = "<group>"; };
+		54A3EE4D1713280500297364 /* AGCustomUserItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomUserItemView.m; sourceTree = "<group>"; };
+		54A3EE4E1713280500297364 /* AGCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomViewController.h; sourceTree = "<group>"; };
+		54A3EE4F1713280500297364 /* AGCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomViewController.m; sourceTree = "<group>"; };
 		54CDFE04170D3B6B00A4E7B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54CDFE07170D3B6B00A4E7B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		54CDFEAC170D706E00A4E7B7 /* NewsChannelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsChannelManager.h; path = ../Manager/NewsChannel/NewsChannelManager.h; sourceTree = "<group>"; };
@@ -227,6 +301,10 @@
 				5425137917118CAA00793F9C /* QQApi.framework in Frameworks */,
 				5425137A17118CAA00793F9C /* libWeChatSDK_armv7_armv7s.a in Frameworks */,
 				5425137D17118CAA00793F9C /* ShareSDK.framework in Frameworks */,
+				54393BBF1713290F002E6F53 /* AGCommon.framework in Frameworks */,
+				54393BC01713290F002E6F53 /* QQApi.framework in Frameworks */,
+				54393BC11713290F002E6F53 /* libWeChatSDK_armv7_armv7s.a in Frameworks */,
+				54393BC41713290F002E6F53 /* ShareSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +347,7 @@
 				54E9FA0D170F042000D7B8D9 /* Setting */,
 				54E9F980170E7F5400D7B8D9 /* MainFrame */,
 				54E9F985170E7FA900D7B8D9 /* HomeView */,
+				54A3EE3B1713280500297364 /* Share */,
 				5411815E170D33ED00E50C9C /* common */,
 			);
 			name = Classes;
@@ -290,6 +369,7 @@
 		5411815E170D33ED00E50C9C /* common */ = {
 			isa = PBXGroup;
 			children = (
+				54393BB41713290F002E6F53 /* ShareSDK */,
 				542513361711195700793F9C /* TMQuiltView */,
 				54E9FA24170F283A00D7B8D9 /* ResManager */,
 				54E9FA18170F175200D7B8D9 /* UITitleView */,
@@ -364,6 +444,60 @@
 			path = SDKExport;
 			sourceTree = "<group>";
 		};
+		54393BB41713290F002E6F53 /* ShareSDK */ = {
+			isa = PBXGroup;
+			children = (
+				54393BB51713290F002E6F53 /* AGCommon.framework */,
+				54393BB61713290F002E6F53 /* ShareSDKLocalizable.strings */,
+				54393BB81713290F002E6F53 /* QQApi.framework */,
+				54393BB91713290F002E6F53 /* Resource.bundle */,
+				54393BBA1713290F002E6F53 /* SDKExport */,
+				54393BBE1713290F002E6F53 /* ShareSDK.framework */,
+			);
+			path = ShareSDK;
+			sourceTree = "<group>";
+		};
+		54393BBA1713290F002E6F53 /* SDKExport */ = {
+			isa = PBXGroup;
+			children = (
+				54393BBB1713290F002E6F53 /* libWeChatSDK_armv7_armv7s.a */,
+				54393BBC1713290F002E6F53 /* WXApi.h */,
+				54393BBD1713290F002E6F53 /* WXApiObject.h */,
+			);
+			path = SDKExport;
+			sourceTree = "<group>";
+		};
+		54A3EE3B1713280500297364 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				54393BC917132B10002E6F53 /* IIViewDeckController.h */,
+				54393BCA17132B10002E6F53 /* IIViewDeckController.m */,
+				54393BCD17132BD9002E6F53 /* IIWrapController.h */,
+				54393BCE17132BD9002E6F53 /* IIWrapController.m */,
+				54A3EE3C1713280500297364 /* AGCustomAtPlatListViewController.h */,
+				54A3EE3D1713280500297364 /* AGCustomAtPlatListViewController.m */,
+				54A3EE3E1713280500297364 /* AGCustomFriendListViewToolbar.h */,
+				54A3EE3F1713280500297364 /* AGCustomFriendListViewToolbar.m */,
+				54A3EE401713280500297364 /* AGCustomFriendsViewController.h */,
+				54A3EE411713280500297364 /* AGCustomFriendsViewController.m */,
+				54A3EE421713280500297364 /* AGCustomMoreCell.h */,
+				54A3EE431713280500297364 /* AGCustomMoreCell.m */,
+				54A3EE441713280500297364 /* AGCustomShareItemView.h */,
+				54A3EE451713280500297364 /* AGCustomShareItemView.m */,
+				54A3EE461713280500297364 /* AGCustomShareViewController.h */,
+				54A3EE471713280500297364 /* AGCustomShareViewController.m */,
+				54A3EE481713280500297364 /* AGCustomShareViewToolbar.h */,
+				54A3EE491713280500297364 /* AGCustomShareViewToolbar.m */,
+				54A3EE4A1713280500297364 /* AGCustomUserInfoCell.h */,
+				54A3EE4B1713280500297364 /* AGCustomUserInfoCell.m */,
+				54A3EE4C1713280500297364 /* AGCustomUserItemView.h */,
+				54A3EE4D1713280500297364 /* AGCustomUserItemView.m */,
+				54A3EE4E1713280500297364 /* AGCustomViewController.h */,
+				54A3EE4F1713280500297364 /* AGCustomViewController.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
 		54CDFEAA170D704C00A4E7B7 /* interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +523,9 @@
 				54CDFEAE170D708100A4E7B7 /* NewChannelList.h */,
 				54E9FA3D170F4B3F00D7B8D9 /* SettingCommandKey.h */,
 				54CDFEAC170D706E00A4E7B7 /* NewsChannelManager.h */,
+				542513981711BC1600793F9C /* ArticleContentObject.h */,
+				542513991711BC1600793F9C /* ArticleContentManager.h */,
+				5425139A1711BC1600793F9C /* ArticleContentNotifyKey.h */,
 			);
 			name = manger;
 			sourceTree = "<group>";
@@ -512,6 +649,8 @@
 		54E9F9B3170EBDE500D7B8D9 /* NewsList */ = {
 			isa = PBXGroup;
 			children = (
+				542513A21711C47100793F9C /* NewsContentViewer.h */,
+				542513A31711C47100793F9C /* NewsContentViewer.m */,
 				54E9F9B4170EBDF800D7B8D9 /* NewsListViewController.h */,
 				54E9F9B5170EBDF800D7B8D9 /* NewsListViewController.m */,
 				54E9F9C3170EC3B700D7B8D9 /* ArticlelistView */,
@@ -525,6 +664,7 @@
 			children = (
 				541B91C217104CF300307FE0 /* UIArticleListTableViewCell.h */,
 				541B91C317104CF300307FE0 /* UIArticleListTableViewCell.m */,
+				542513A61711CA4500793F9C /* AriticleListViewDelegate.h */,
 				54E9F9C5170EC3C400D7B8D9 /* ArticlelistViewController.h */,
 				54E9F9C6170EC3C400D7B8D9 /* ArticlelistViewController.m */,
 			);
@@ -590,6 +730,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5425139B1711BC3A00793F9C /* ArticleContentObject.h in Headers */,
+				5425139C1711BC3A00793F9C /* ArticleContentManager.h in Headers */,
+				5425139D1711BC3A00793F9C /* ArticleContentNotifyKey.h in Headers */,
 				541B91B7171018A600307FE0 /* ReviewListItem.h in Headers */,
 				541B91B8171018A600307FE0 /* NewsListItem.h in Headers */,
 				541B91B9171018A600307FE0 /* NewListNotificationKeys.h in Headers */,
@@ -644,6 +787,22 @@
 				54251350171131BF00793F9C /* TMPullingRefreshQuiltViewDelegate.h in Headers */,
 				5425137B17118CAA00793F9C /* WXApi.h in Headers */,
 				5425137C17118CAA00793F9C /* WXApiObject.h in Headers */,
+				542513A41711C47100793F9C /* NewsContentViewer.h in Headers */,
+				542513A71711CA4500793F9C /* AriticleListViewDelegate.h in Headers */,
+				54A3EE501713280500297364 /* AGCustomAtPlatListViewController.h in Headers */,
+				54A3EE521713280500297364 /* AGCustomFriendListViewToolbar.h in Headers */,
+				54A3EE541713280500297364 /* AGCustomFriendsViewController.h in Headers */,
+				54A3EE561713280500297364 /* AGCustomMoreCell.h in Headers */,
+				54A3EE581713280500297364 /* AGCustomShareItemView.h in Headers */,
+				54A3EE5A1713280500297364 /* AGCustomShareViewController.h in Headers */,
+				54A3EE5C1713280500297364 /* AGCustomShareViewToolbar.h in Headers */,
+				54A3EE5E1713280500297364 /* AGCustomUserInfoCell.h in Headers */,
+				54A3EE601713280500297364 /* AGCustomUserItemView.h in Headers */,
+				54A3EE621713280500297364 /* AGCustomViewController.h in Headers */,
+				54393BC21713290F002E6F53 /* WXApi.h in Headers */,
+				54393BC31713290F002E6F53 /* WXApiObject.h in Headers */,
+				54393BCB17132B10002E6F53 /* IIViewDeckController.h in Headers */,
+				54393BCF17132BD9002E6F53 /* IIWrapController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,6 +891,19 @@
 				542513441711195700793F9C /* TMQuiltViewController.m in Sources */,
 				5425134817111B8800793F9C /* TMPullingRefreshQuiltViewController.m in Sources */,
 				5425134C17111C2300793F9C /* TMPhotoQuiltViewCell.m in Sources */,
+				542513A51711C47100793F9C /* NewsContentViewer.m in Sources */,
+				54A3EE511713280500297364 /* AGCustomAtPlatListViewController.m in Sources */,
+				54A3EE531713280500297364 /* AGCustomFriendListViewToolbar.m in Sources */,
+				54A3EE551713280500297364 /* AGCustomFriendsViewController.m in Sources */,
+				54A3EE571713280500297364 /* AGCustomMoreCell.m in Sources */,
+				54A3EE591713280500297364 /* AGCustomShareItemView.m in Sources */,
+				54A3EE5B1713280500297364 /* AGCustomShareViewController.m in Sources */,
+				54A3EE5D1713280500297364 /* AGCustomShareViewToolbar.m in Sources */,
+				54A3EE5F1713280500297364 /* AGCustomUserInfoCell.m in Sources */,
+				54A3EE611713280500297364 /* AGCustomUserItemView.m in Sources */,
+				54A3EE631713280500297364 /* AGCustomViewController.m in Sources */,
+				54393BCC17132B10002E6F53 /* IIViewDeckController.m in Sources */,
+				54393BD017132BD9002E6F53 /* IIWrapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +914,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				5425137017118CAA00793F9C /* en */,
+			);
+			name = ShareSDKLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		54393BB61713290F002E6F53 /* ShareSDKLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54393BB71713290F002E6F53 /* en */,
 			);
 			name = ShareSDKLocalizable.strings;
 			sourceTree = "<group>";

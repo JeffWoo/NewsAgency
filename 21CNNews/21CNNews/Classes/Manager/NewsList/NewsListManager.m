@@ -189,7 +189,7 @@
         
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];                         
         
-        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss zzz"];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
         
         int regionId = 0;
         
@@ -237,8 +237,6 @@
         [self performSelectorOnMainThread:@selector(notifyNewsListChanged:) withObject:[NSNumber numberWithInt:regionId] waitUntilDone:NO];
         
     }];
-    
-    
 }
 
 

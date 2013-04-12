@@ -3,6 +3,7 @@
 #import "SettingCommandKey.h"
 #import "SettingManager.h"
 #import "NSNotificationCenterKeys.h"
+#import "EGOCache.h"
 
 @implementation SettingCellSelectedHandle
 
@@ -29,6 +30,8 @@
 
 - (void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
     [super dealloc];
 }
 
@@ -43,7 +46,7 @@
 
 - (void)onClearCache
 {
-    
+    [[EGOCache globalCache] clearCache];
 }
 
 
