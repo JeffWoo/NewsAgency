@@ -67,7 +67,7 @@
         _titleView = [[UITitleView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 30)];
         _titleView.backgroundColor = [UIColor yellowColor];
         [_titleView setTitleText:@"设置"];
-        [_titleView setLeftButtonImage:resGetImage(@"blueArrow.png")];
+        [_titleView setLeftButtonImage:resGetImage(@"blueArrow.png") frame:CGRectMake(0, 0, 44, 44)];
         [_titleView addLeftButonTarget:self action:@selector(backButtonClicked) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_titleView];
         

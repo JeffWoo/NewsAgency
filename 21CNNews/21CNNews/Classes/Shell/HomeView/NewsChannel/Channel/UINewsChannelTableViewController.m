@@ -35,9 +35,11 @@
         
         self.dataList = [[NewsChannelManager shareInstance] getNewChannelList];
         
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 260, 300)];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+        _tableView.separatorColor = [UIColor colorWithRed:0x1A / 255.0f green:0x1C / 255.0f blue:0x20 / 255.0f alpha:1];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor clearColor];
         [self.view addSubview:_tableView];
     }
     
@@ -64,6 +66,12 @@
 }
 
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44.0f;
+}
+
+
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -79,12 +87,14 @@
     UINewsChannelTableCell *cell = (UINewsChannelTableCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
-        cell = [[[UINewsChannelTableCell alloc] initWithStyle:UITableViewCellStyleDefault frame:CGRectMake(0, 0, 260, 60) reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UINewsChannelTableCell alloc] initWithStyle:UITableViewCellStyleDefault frame:CGRectMake(0, 0, 275, 60) reuseIdentifier:CellIdentifier] autorelease];
     }
     
     NewsChannelObject* object = [self.dataList getNewsChannelObject:indexPath.row];
     [cell setImageUrl:object.thumbImgUrl];
     [cell setTitle:object.title];
+    
+    cell.contentView.backgroundColor = [UIColor blackColor];
     
     return cell;
 }

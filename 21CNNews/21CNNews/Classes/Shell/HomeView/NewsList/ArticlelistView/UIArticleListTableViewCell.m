@@ -15,6 +15,7 @@
 @property (nonatomic, retain) EGOImageView* eGoImageView;
 @property (nonatomic, retain) NewsListItem* newsListItem;
 @property (nonatomic, retain) UILabel* titleLebel;
+@property (nonatomic, retain) UILabel* sourceNameLabel;
 
 @end
 
@@ -40,6 +41,8 @@
     [_newsListItem release];
     
     [_titleLebel release];
+    
+    [_sourceNameLabel release];
     
     [super dealloc];
 }
@@ -69,7 +72,7 @@
         
         self.eGoImageView.imageURL = [NSURL URLWithString:item.thumbImgUrl];
         self.eGoImageView.hidden = NO;
-        self.eGoImageView.frame = CGRectMake(0, 0, 80, 100);
+        self.eGoImageView.frame = CGRectMake(12, 12, 98, 72);
     }
 
     
@@ -79,7 +82,7 @@
         {
             self.titleLebel = [[UILabel alloc] initWithFrame:CGRectZero];
             self.titleLebel.backgroundColor = [UIColor clearColor];
-            self.titleLebel.font = [UIFont systemFontOfSize:14];
+            self.titleLebel.font = [UIFont systemFontOfSize:18];
             [self.titleLebel setLineBreakMode:UILineBreakModeWordWrap];
             [self.titleLebel setNumberOfLines:0];
             [self addSubview:self.titleLebel];
@@ -89,9 +92,29 @@
         CGSize size = [item.title sizeWithFont:self.titleLebel.font constrainedToSize:CGSizeMake(contentWidth, 100) lineBreakMode:UILineBreakModeWordWrap];
         
         CGFloat originX = self.eGoImageView.hidden ? 0 : self.eGoImageView.frame.size.width + 20;
-        CGRect frame = CGRectMake(originX, 0, size.width, size.height);
+        CGRect frame = CGRectMake(originX, 12, size.width, size.height);
         self.titleLebel.frame = frame;
         self.titleLebel.text = item.title;
+    }
+    
+    if (item.sourceName)
+    {
+        if (!self.sourceNameLabel)
+        {
+            self.sourceNameLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+            self.sourceNameLabel.backgroundColor = [UIColor clearColor];
+            self.sourceNameLabel.font = [UIFont systemFontOfSize:12];
+            [self.sourceNameLabel setLineBreakMode:UILineBreakModeMiddleTruncation];
+            [self.sourceNameLabel setNumberOfLines:1];
+            [self addSubview:self.sourceNameLabel];
+        }
+        
+        
+        CGFloat originX = self.titleLebel.frame.origin.x;
+        CGFloat originY = self.frame.size.height - 29;
+        CGRect frame = CGRectMake(originX, originY, 100, 20);
+        self.sourceNameLabel.frame = frame;
+        self.sourceNameLabel.text = item.sourceName;
     }
 }
 

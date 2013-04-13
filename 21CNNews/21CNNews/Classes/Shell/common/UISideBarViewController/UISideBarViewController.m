@@ -9,7 +9,7 @@
 #import "UISideBarViewController.h"
 
 #define kContentOffset              (self.view.frame.size.width - _contentOffset)
-#define kContentMinOffset           60
+#define kContentMinOffset           30
 #define kMoveAnimationDuration      0.3f
 
 
@@ -44,7 +44,7 @@ typedef enum _SideBarShowDirection
         
         _currentDirection = SideBarShowDirectionNone;
         
-        _contentOffset = 60.0f;
+        _contentOffset = kContentMinOffset;
         
         self.view.backgroundColor = [UIColor clearColor];
     }

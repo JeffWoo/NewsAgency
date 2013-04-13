@@ -13,6 +13,7 @@
 #import "iPhoneTools.h"
 #import "LSURLDispatcher.h"
 #import "UserSerialNumJSDataParser.h"
+#import "UserSerialNumNotificationKeys.h"
 
 @interface UserSerialNumManager()
 
@@ -154,6 +155,8 @@
             assert(false);
         }
     }];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kUserSerialNumDidChanged object:self userInfo:nil];
 }
 
 

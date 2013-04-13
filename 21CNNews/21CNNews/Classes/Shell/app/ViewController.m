@@ -60,35 +60,16 @@
 }
 
 
-
-- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
-{
-    [super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
-}
-
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
-{
-    [super willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
-    
-//    [self.sideBarController didRotateFromInterfaceOrientation];
-//    [[NSNotificationCenter defaultCenter] postNotificationName:DidRotateFromInterfaceOrientation object:self userInfo:nil];
-}
-
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-{    
-	[super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-}
-
 //for ios6
 - (BOOL)shouldAutorotate
 {
-    return YES;
+    return NO;
 }
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return YES;
+	return NO;
 }
 
 

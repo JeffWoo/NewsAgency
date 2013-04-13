@@ -12,9 +12,11 @@
 
 - (void)setTitleText:(NSString*)titleText;
 
-- (void)setLeftButtonImage:(UIImage*)image;
+- (void)setBgImage:(UIImage*)bgImage;
 
-- (void)setRightButtonImage:(UIImage*)image;
+- (void)setLeftButtonImage:(UIImage*)image frame:(CGRect)frame;
+
+- (void)setRightButtonImage:(UIImage*)image frame:(CGRect)frame;
 
 - (void)addLeftButonTarget:(id)targer action:(SEL)selector forControlEvents:(UIControlEvents)events;
 

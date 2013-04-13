@@ -25,15 +25,16 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self)
-    {
+    {        
         self.frame = frame;
         _eGoImageView = [[[EGOImageView alloc] initWithPlaceholderImage:nil] autorelease];
-        _eGoImageView.frame = CGRectMake(4.0f, 4.0f, 36.0f, 36.0f);
+        _eGoImageView.frame = CGRectMake(12.0f, 10.0f, 24.0f, 24.0f);
         [self addSubview:_eGoImageView];
         
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 0, frame.size.width - 50, frame.size.height)];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 0, frame.size.width - 50, 44)];
         _titleLabel.textAlignment = NSTextAlignmentLeft;
         _titleLabel.backgroundColor = [UIColor clearColor];
+        _titleLabel.textColor = [UIColor whiteColor];
         [self addSubview:_titleLabel];
     }
     return self;

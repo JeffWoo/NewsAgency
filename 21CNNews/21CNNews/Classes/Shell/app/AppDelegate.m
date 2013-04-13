@@ -12,6 +12,8 @@
 #import "ShareSDK/ShareSDK.h"
 #import <WXApi.h>
 #import <QQApi/QQApi.h>
+#import "UIImage+ResManager.h"
+
 
 @interface AppDelegate()
 
@@ -56,6 +58,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [UIImage loadNewMethod];
+    
     [WXApi registerApp:@"wx6dd7a9b94f3dd72a"];
     [QQApi registerPluginWithId:@"QQ075BCD15"];
     [ShareSDK registerApp:@"520520test"];

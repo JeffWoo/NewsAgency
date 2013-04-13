@@ -121,7 +121,7 @@
     NSString* userSerialNum = [[UserSerialNumManager shareInstance] getUserSerialNum];
     BOOL bHasImg = ![SettingManager shareInstance].isNoneImageMode;
     int articleType = [self getArtiCleTypeNum:channelObject.articleType];
-    NSString* urlStr = [NSString stringWithFormat:@"http://auto.21cn.com/api/client/v2/getRegionArticleList.do?regionId=%d&pageNo=%d&pageSize=10&picSize=s80x100&hasImg=%d&articleType=%d&userSerialNumber=%@", channelObject.regionId, pageIndex, bHasImg, articleType, userSerialNum];
+    NSString* urlStr = [NSString stringWithFormat:@"http://auto.21cn.com/api/client/v2/getRegionArticleList.do?regionId=%d&pageNo=%d&pageSize=10&picSize=s98x72&hasImg=%d&articleType=%d&userSerialNumber=%@", channelObject.regionId, pageIndex, bHasImg, articleType, userSerialNum];
     
     NSURL* url = [NSURL URLWithString:urlStr];
     NSURLRequest *req= [NSURLRequest requestWithURL:url];

@@ -33,6 +33,14 @@
 		542513941711B57900793F9C /* ArticleContentJSDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 542513921711B57900793F9C /* ArticleContentJSDataParser.h */; };
 		542513951711B57900793F9C /* ArticleContentJSDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 542513931711B57900793F9C /* ArticleContentJSDataParser.m */; };
 		542513971711BB2000793F9C /* ArticleContentNotifyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 542513961711BB2000793F9C /* ArticleContentNotifyKey.h */; };
+		548F6423171915A60027040F /* HotNewsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F6421171915A60027040F /* HotNewsManager.h */; };
+		548F6424171915A60027040F /* HotNewsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 548F6422171915A60027040F /* HotNewsManager.m */; };
+		548F642B1719193E0027040F /* HotNewsJsDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F64291719193E0027040F /* HotNewsJsDataParser.h */; };
+		548F642C1719193E0027040F /* HotNewsJsDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 548F642A1719193E0027040F /* HotNewsJsDataParser.m */; };
+		548F642F171919550027040F /* HotNewsItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F642D171919550027040F /* HotNewsItem.h */; };
+		548F6430171919550027040F /* HotNewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 548F642E171919550027040F /* HotNewsItem.m */; };
+		548F643217191FD00027040F /* HotNewsNotificationKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F643117191FD00027040F /* HotNewsNotificationKeys.h */; };
+		548F6450171930DB0027040F /* UserSerialNumNotificationKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F644F171930DB0027040F /* UserSerialNumNotificationKeys.h */; };
 		54CDFE31170D501400A4E7B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CDFE30170D501400A4E7B7 /* Foundation.framework */; };
 		54CDFE7A170D525E00A4E7B7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE71170D525E00A4E7B7 /* FMDatabase.m */; };
 		54CDFE7B170D525E00A4E7B7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDFE73170D525E00A4E7B7 /* FMDatabaseAdditions.m */; };
@@ -127,6 +135,14 @@
 		542513921711B57900793F9C /* ArticleContentJSDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleContentJSDataParser.h; sourceTree = "<group>"; };
 		542513931711B57900793F9C /* ArticleContentJSDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleContentJSDataParser.m; sourceTree = "<group>"; };
 		542513961711BB2000793F9C /* ArticleContentNotifyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleContentNotifyKey.h; sourceTree = "<group>"; };
+		548F6421171915A60027040F /* HotNewsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotNewsManager.h; sourceTree = "<group>"; };
+		548F6422171915A60027040F /* HotNewsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotNewsManager.m; sourceTree = "<group>"; };
+		548F64291719193E0027040F /* HotNewsJsDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotNewsJsDataParser.h; sourceTree = "<group>"; };
+		548F642A1719193E0027040F /* HotNewsJsDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotNewsJsDataParser.m; sourceTree = "<group>"; };
+		548F642D171919550027040F /* HotNewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotNewsItem.h; sourceTree = "<group>"; };
+		548F642E171919550027040F /* HotNewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotNewsItem.m; sourceTree = "<group>"; };
+		548F643117191FD00027040F /* HotNewsNotificationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotNewsNotificationKeys.h; sourceTree = "<group>"; };
+		548F644F171930DB0027040F /* UserSerialNumNotificationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSerialNumNotificationKeys.h; sourceTree = "<group>"; };
 		54CDFE2D170D501400A4E7B7 /* libModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CDFE30170D501400A4E7B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54CDFE70170D525E00A4E7B7 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -211,6 +227,7 @@
 				54092598170DF393006B95D8 /* UserSerialNumJSDataParser.m */,
 				5409258A170DED95006B95D8 /* UserSerialNumManager.h */,
 				5409258B170DED95006B95D8 /* UserSerialNumManager.m */,
+				548F644F171930DB0027040F /* UserSerialNumNotificationKeys.h */,
 			);
 			path = UserSerialNum;
 			sourceTree = "<group>";
@@ -253,6 +270,20 @@
 				542513961711BB2000793F9C /* ArticleContentNotifyKey.h */,
 			);
 			path = ArticleContent;
+			sourceTree = "<group>";
+		};
+		548F64201719158B0027040F /* HotNew */ = {
+			isa = PBXGroup;
+			children = (
+				548F642D171919550027040F /* HotNewsItem.h */,
+				548F642E171919550027040F /* HotNewsItem.m */,
+				548F643117191FD00027040F /* HotNewsNotificationKeys.h */,
+				548F6421171915A60027040F /* HotNewsManager.h */,
+				548F6422171915A60027040F /* HotNewsManager.m */,
+				548F64291719193E0027040F /* HotNewsJsDataParser.h */,
+				548F642A1719193E0027040F /* HotNewsJsDataParser.m */,
+			);
+			path = HotNew;
 			sourceTree = "<group>";
 		};
 		54CDFE24170D501400A4E7B7 = {
@@ -330,6 +361,7 @@
 				541B919C170FF56B00307FE0 /* NewsList */,
 				542513891711AAD100793F9C /* ArticleContent */,
 				54E9F9FF170EF74100D7B8D9 /* setting */,
+				548F64201719158B0027040F /* HotNew */,
 			);
 			name = Manager;
 			path = ../Manager;
@@ -478,6 +510,11 @@
 				542513901711B06700793F9C /* ArticleContentManager.h in Headers */,
 				542513941711B57900793F9C /* ArticleContentJSDataParser.h in Headers */,
 				542513971711BB2000793F9C /* ArticleContentNotifyKey.h in Headers */,
+				548F6423171915A60027040F /* HotNewsManager.h in Headers */,
+				548F642B1719193E0027040F /* HotNewsJsDataParser.h in Headers */,
+				548F642F171919550027040F /* HotNewsItem.h in Headers */,
+				548F643217191FD00027040F /* HotNewsNotificationKeys.h in Headers */,
+				548F6450171930DB0027040F /* UserSerialNumNotificationKeys.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +604,9 @@
 				5425138D1711AAEB00793F9C /* ArticleContentObject.m in Sources */,
 				542513911711B06700793F9C /* ArticleContentManager.m in Sources */,
 				542513951711B57900793F9C /* ArticleContentJSDataParser.m in Sources */,
+				548F6424171915A60027040F /* HotNewsManager.m in Sources */,
+				548F642C1719193E0027040F /* HotNewsJsDataParser.m in Sources */,
+				548F6430171919550027040F /* HotNewsItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

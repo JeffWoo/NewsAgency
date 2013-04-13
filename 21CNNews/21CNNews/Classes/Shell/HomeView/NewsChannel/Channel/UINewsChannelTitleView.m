@@ -8,10 +8,11 @@
 
 #import "UINewsChannelTitleView.h"
 #import "NSNotificationCenterKeys.h"
+#import "ResManager.h"
 
 @interface UINewsChannelTitleView ()
 
-@property (nonatomic, retain) UILabel* titleLabel;
+@property (nonatomic, retain) UIImageView* bgImageView;
 @property (nonatomic, retain) UIButton* addButton;
 @property (nonatomic, retain) UIButton* settingButton;
 
@@ -25,9 +26,7 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        self.backgroundColor = [UIColor brownColor];
-        
-        [self createTitleLabelIfNeed];
+        [self createBgViewIfNeed];
         [self createAddButtonIfNeed];
         [self createSettingButtonIfNeed];
     }
@@ -38,6 +37,8 @@
 
 - (void)dealloc
 {
+    [_bgImageView release];
+    
     [_addButton removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
     [_addButton release];
     
@@ -48,21 +49,17 @@
 }
 
 
-- (void)createTitleLabelIfNeed
+- (void)createBgViewIfNeed
 {
-    if (self.titleLabel)
+    if (self.bgImageView)
     {
         return;
     }
     
-    self.titleLabel = [[[UILabel alloc] initWithFrame:CGRectMake(30, 0, self.frame.size.width - 30, self.frame.size.height)] autorelease];
-    self.titleLabel.text = @"21CN新闻";
-    self.titleLabel.textAlignment = NSTextAlignmentLeft;
-    self.titleLabel.backgroundColor = [UIColor clearColor];
-    
-    [self addSubview:self.titleLabel];
+    self.bgImageView = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, self.frame.size.height)] autorelease];
+    self.bgImageView.image = resGetImage(@"home/left/leftNavBgImage.png");
+    [self addSubview:self.bgImageView];
 }
-
 
 
 - (void)createAddButtonIfNeed
@@ -72,9 +69,8 @@
         return;
     }
     
-    self.addButton = [[[UIButton alloc] initWithFrame:CGRectMake(150, 20, 28, 28)] autorelease];
-    self.addButton.backgroundColor = [UIColor blueColor];
-    
+    self.addButton = [[[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width - 85, 12, 20, 20)] autorelease];
+    [self.addButton setImage:resGetImage(@"home/left/addButton.png") forState:UIControlStateNormal];
     
     [self addSubview:self.addButton];
 }
@@ -87,8 +83,8 @@
         return;
     }
     
-    self.settingButton = [[[UIButton alloc] initWithFrame:CGRectMake(200, 20, 28, 28)] autorelease];
-    self.settingButton.backgroundColor = [UIColor yellowColor];
+    self.settingButton = [[[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width - 35, 12, 20, 20)] autorelease];
+    [self.settingButton setImage:resGetImage(@"home/left/settingButton.png") forState:UIControlStateNormal];    
     [self.settingButton addTarget:self action:@selector(settingButtonclicked) forControlEvents:UIControlEventTouchUpInside];
     
     [self addSubview:self.settingButton];

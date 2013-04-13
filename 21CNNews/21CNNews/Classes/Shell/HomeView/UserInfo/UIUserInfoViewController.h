@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UISideBarSubViewController.h"
 
-@interface UIUserInfoViewController : UIViewController
+@interface UIUserInfoViewController : UISideBarSubViewController
 
 @end

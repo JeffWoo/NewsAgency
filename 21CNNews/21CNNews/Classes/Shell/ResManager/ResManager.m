@@ -1,6 +1,8 @@
 
 #import "ResManager.h"
 #import "SettingManager.h"
+#import "UIImage+ResManager.h"
+
 
 UIImage* resGetImage(NSString* shotName)
 {

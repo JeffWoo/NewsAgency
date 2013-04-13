@@ -12,6 +12,7 @@
 		541B91C917108E4400307FE0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541B91C817108E4400307FE0 /* SystemConfiguration.framework */; };
 		541B91CB17108E5600307FE0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541B91CA17108E5600307FE0 /* MessageUI.framework */; };
 		541B91CD17108E6200307FE0 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 541B91CC17108E6200307FE0 /* libicucore.dylib */; };
+		541C20A517189BC9006E00DC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541C20A417189BC9006E00DC /* ViewController.xib */; };
 		5425136517118C6500793F9C /* AGCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5425135B17118C6500793F9C /* AGCommon.framework */; };
 		5425136617118C6500793F9C /* ShareSDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5425135C17118C6500793F9C /* ShareSDKLocalizable.strings */; };
 		5425136717118C6500793F9C /* QQApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5425135E17118C6500793F9C /* QQApi.framework */; };
@@ -20,6 +21,9 @@
 		5425136A17118C6500793F9C /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 5425136217118C6500793F9C /* WXApi.h */; };
 		5425136B17118C6500793F9C /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5425136317118C6500793F9C /* WXApiObject.h */; };
 		5425136C17118C6500793F9C /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5425136417118C6500793F9C /* ShareSDK.framework */; };
+		542D7AB31719103E00E878D7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 542D7AB01719103E00E878D7 /* Default-568h@2x.png */; };
+		542D7AB41719103E00E878D7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 542D7AB11719103E00E878D7 /* Default.png */; };
+		542D7AB51719103E00E878D7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 542D7AB21719103E00E878D7 /* Default@2x.png */; };
 		546E3125170C86110047B9D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546E3124170C86110047B9D2 /* UIKit.framework */; };
 		546E3127170C86110047B9D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546E3126170C86110047B9D2 /* Foundation.framework */; };
 		546E3129170C86110047B9D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546E3128170C86110047B9D2 /* CoreGraphics.framework */; };
@@ -70,6 +74,7 @@
 		541B91C817108E4400307FE0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		541B91CA17108E5600307FE0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		541B91CC17108E6200307FE0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		541C20A317189BC9006E00DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ../../../en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		5425135B17118C6500793F9C /* AGCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGCommon.framework; sourceTree = "<group>"; };
 		5425135D17118C6500793F9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ShareSDKLocalizable.strings; sourceTree = "<group>"; };
 		5425135E17118C6500793F9C /* QQApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QQApi.framework; sourceTree = "<group>"; };
@@ -78,6 +83,9 @@
 		5425136217118C6500793F9C /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		5425136317118C6500793F9C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		5425136417118C6500793F9C /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDK.framework; sourceTree = "<group>"; };
+		542D7AB01719103E00E878D7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		542D7AB11719103E00E878D7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		542D7AB21719103E00E878D7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		546E3121170C86110047B9D2 /* 21CNNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 21CNNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546E3124170C86110047B9D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		546E3126170C86110047B9D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -200,6 +208,9 @@
 		546E312B170C86110047B9D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				542D7AB01719103E00E878D7 /* Default-568h@2x.png */,
+				542D7AB11719103E00E878D7 /* Default.png */,
+				542D7AB21719103E00E878D7 /* Default@2x.png */,
 				546E312C170C86110047B9D2 /* 21CNNews-Info.plist */,
 				546E312D170C86110047B9D2 /* InfoPlist.strings */,
 				546E3130170C86110047B9D2 /* main.m */,
@@ -213,6 +224,7 @@
 			children = (
 				5425135A17118C6500793F9C /* ShareSDK */,
 				54118106170D2FF500E50C9C /* AppDelegate.h */,
+				541C20A417189BC9006E00DC /* ViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -333,6 +345,10 @@
 				54E9FA21170F269700D7B8D9 /* night in Resources */,
 				5425136617118C6500793F9C /* ShareSDKLocalizable.strings in Resources */,
 				5425136817118C6500793F9C /* Resource.bundle in Resources */,
+				541C20A517189BC9006E00DC /* ViewController.xib in Resources */,
+				542D7AB31719103E00E878D7 /* Default-568h@2x.png in Resources */,
+				542D7AB41719103E00E878D7 /* Default.png in Resources */,
+				542D7AB51719103E00E878D7 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +379,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		541C20A417189BC9006E00DC /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541C20A317189BC9006E00DC /* en */,
+			);
+			name = ViewController.xib;
+			path = Shell/app;
+			sourceTree = "<group>";
+		};
 		5425135C17118C6500793F9C /* ShareSDKLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

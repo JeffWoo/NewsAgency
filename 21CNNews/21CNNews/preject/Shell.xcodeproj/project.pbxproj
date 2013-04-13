@@ -18,6 +18,9 @@
 		541B91BA171018A600307FE0 /* NewsListManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 541B91B61710189100307FE0 /* NewsListManager.h */; };
 		541B91C417104CF300307FE0 /* UIArticleListTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 541B91C217104CF300307FE0 /* UIArticleListTableViewCell.h */; };
 		541B91C517104CF300307FE0 /* UIArticleListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 541B91C317104CF300307FE0 /* UIArticleListTableViewCell.m */; };
+		541C208317188E44006E00DC /* UIImage+ResManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 541C208117188E44006E00DC /* UIImage+ResManager.h */; };
+		541C208417188E44006E00DC /* UIImage+ResManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 541C208217188E44006E00DC /* UIImage+ResManager.m */; };
+		541C20A717189BEE006E00DC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541C20A117189B54006E00DC /* ViewController.xib */; };
 		5425133E1711195700793F9C /* TMQuiltView-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 542513371711195700793F9C /* TMQuiltView-Prefix.pch */; };
 		5425133F1711195700793F9C /* TMQuiltView.h in Headers */ = {isa = PBXBuildFile; fileRef = 542513381711195700793F9C /* TMQuiltView.h */; };
 		542513401711195700793F9C /* TMQuiltView.m in Sources */ = {isa = PBXBuildFile; fileRef = 542513391711195700793F9C /* TMQuiltView.m */; };
@@ -52,6 +55,21 @@
 		54393BCC17132B10002E6F53 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54393BCA17132B10002E6F53 /* IIViewDeckController.m */; };
 		54393BCF17132BD9002E6F53 /* IIWrapController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54393BCD17132BD9002E6F53 /* IIWrapController.h */; };
 		54393BD017132BD9002E6F53 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54393BCE17132BD9002E6F53 /* IIWrapController.m */; };
+		548F643C17192DEE0027040F /* UINewsChannelTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F643417192DEE0027040F /* UINewsChannelTableCell.h */; };
+		548F643D17192DEE0027040F /* UINewsChannelTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 548F643517192DEE0027040F /* UINewsChannelTableCell.m */; };
+		548F643E17192DEE0027040F /* UINewsChannelTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F643617192DEE0027040F /* UINewsChannelTableViewController.h */; };
+		548F643F17192DEE0027040F /* UINewsChannelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548F643717192DEE0027040F /* UINewsChannelTableViewController.m */; };
+		548F644017192DEE0027040F /* UINewsChannelTitleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F643817192DEE0027040F /* UINewsChannelTitleView.h */; };
+		548F644117192DEE0027040F /* UINewsChannelTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 548F643917192DEE0027040F /* UINewsChannelTitleView.m */; };
+		548F644717192EE80027040F /* HotNewListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F644517192EE80027040F /* HotNewListViewController.h */; };
+		548F644817192EE80027040F /* HotNewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548F644617192EE80027040F /* HotNewListViewController.m */; };
+		548F644A17192F270027040F /* HotNewsNotificationKeys.h in Resources */ = {isa = PBXBuildFile; fileRef = 548F644917192F270027040F /* HotNewsNotificationKeys.h */; };
+		548F644C17192FBB0027040F /* HotNewsManager.h in Resources */ = {isa = PBXBuildFile; fileRef = 548F644B17192FBB0027040F /* HotNewsManager.h */; };
+		548F644E17192FDF0027040F /* HotNewsItem.h in Resources */ = {isa = PBXBuildFile; fileRef = 548F644D17192FDF0027040F /* HotNewsItem.h */; };
+		548F6453171935400027040F /* HotNewsButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F64511719353F0027040F /* HotNewsButton.h */; };
+		548F6454171935400027040F /* HotNewsButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 548F64521719353F0027040F /* HotNewsButton.m */; };
+		548F645717193AD10027040F /* UINewsChannelViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 548F645517193AD10027040F /* UINewsChannelViewController.h */; };
+		548F645817193AD10027040F /* UINewsChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548F645617193AD10027040F /* UINewsChannelViewController.m */; };
 		54A3EE501713280500297364 /* AGCustomAtPlatListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE3C1713280500297364 /* AGCustomAtPlatListViewController.h */; };
 		54A3EE511713280500297364 /* AGCustomAtPlatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A3EE3D1713280500297364 /* AGCustomAtPlatListViewController.m */; };
 		54A3EE521713280500297364 /* AGCustomFriendListViewToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A3EE3E1713280500297364 /* AGCustomFriendListViewToolbar.h */; };
@@ -96,14 +114,6 @@
 		54E9F984170E7F6C00D7B8D9 /* MainFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9F982170E7F6C00D7B8D9 /* MainFrameViewController.m */; };
 		54E9F988170E7FD800D7B8D9 /* HomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9F986170E7FD800D7B8D9 /* HomeViewController.h */; };
 		54E9F989170E7FD800D7B8D9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9F987170E7FD800D7B8D9 /* HomeViewController.m */; };
-		54E9F996170E801000D7B8D9 /* UINewsChannelTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9F98B170E801000D7B8D9 /* UINewsChannelTableCell.h */; };
-		54E9F997170E801000D7B8D9 /* UINewsChannelTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9F98C170E801000D7B8D9 /* UINewsChannelTableCell.m */; };
-		54E9F998170E801000D7B8D9 /* UINewsChannelTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9F98D170E801000D7B8D9 /* UINewsChannelTableViewController.h */; };
-		54E9F999170E801000D7B8D9 /* UINewsChannelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9F98E170E801000D7B8D9 /* UINewsChannelTableViewController.m */; };
-		54E9F99A170E801000D7B8D9 /* UINewsChannelTitleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9F98F170E801000D7B8D9 /* UINewsChannelTitleView.h */; };
-		54E9F99B170E801000D7B8D9 /* UINewsChannelTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9F990170E801000D7B8D9 /* UINewsChannelTitleView.m */; };
-		54E9F99C170E801000D7B8D9 /* UINewsChannelViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9F991170E801000D7B8D9 /* UINewsChannelViewController.h */; };
-		54E9F99D170E801000D7B8D9 /* UINewsChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9F992170E801000D7B8D9 /* UINewsChannelViewController.m */; };
 		54E9F99E170E801000D7B8D9 /* UIUserInfoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9F994170E801000D7B8D9 /* UIUserInfoViewController.h */; };
 		54E9F99F170E801000D7B8D9 /* UIUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E9F995170E801000D7B8D9 /* UIUserInfoViewController.m */; };
 		54E9F9A7170EAC0C00D7B8D9 /* InitManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9F9A6170EABD400D7B8D9 /* InitManager.h */; };
@@ -169,6 +179,9 @@
 		541B91B61710189100307FE0 /* NewsListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListManager.h; path = ../Manager/NewsList/NewsListManager.h; sourceTree = "<group>"; };
 		541B91C217104CF300307FE0 /* UIArticleListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIArticleListTableViewCell.h; sourceTree = "<group>"; };
 		541B91C317104CF300307FE0 /* UIArticleListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIArticleListTableViewCell.m; sourceTree = "<group>"; };
+		541C208117188E44006E00DC /* UIImage+ResManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResManager.h"; sourceTree = "<group>"; };
+		541C208217188E44006E00DC /* UIImage+ResManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResManager.m"; sourceTree = "<group>"; };
+		541C20A217189B54006E00DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ../../../en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		542513371711195700793F9C /* TMQuiltView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TMQuiltView-Prefix.pch"; sourceTree = "<group>"; };
 		542513381711195700793F9C /* TMQuiltView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMQuiltView.h; sourceTree = "<group>"; };
 		542513391711195700793F9C /* TMQuiltView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMQuiltView.m; sourceTree = "<group>"; };
@@ -207,6 +220,21 @@
 		54393BCA17132B10002E6F53 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
 		54393BCD17132BD9002E6F53 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
 		54393BCE17132BD9002E6F53 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		548F643417192DEE0027040F /* UINewsChannelTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINewsChannelTableCell.h; sourceTree = "<group>"; };
+		548F643517192DEE0027040F /* UINewsChannelTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINewsChannelTableCell.m; sourceTree = "<group>"; };
+		548F643617192DEE0027040F /* UINewsChannelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINewsChannelTableViewController.h; sourceTree = "<group>"; };
+		548F643717192DEE0027040F /* UINewsChannelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINewsChannelTableViewController.m; sourceTree = "<group>"; };
+		548F643817192DEE0027040F /* UINewsChannelTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINewsChannelTitleView.h; sourceTree = "<group>"; };
+		548F643917192DEE0027040F /* UINewsChannelTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINewsChannelTitleView.m; sourceTree = "<group>"; };
+		548F644517192EE80027040F /* HotNewListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotNewListViewController.h; sourceTree = "<group>"; };
+		548F644617192EE80027040F /* HotNewListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotNewListViewController.m; sourceTree = "<group>"; };
+		548F644917192F270027040F /* HotNewsNotificationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = HotNewsNotificationKeys.h; path = ../../../../Manager/HotNew/HotNewsNotificationKeys.h; sourceTree = "<group>"; };
+		548F644B17192FBB0027040F /* HotNewsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = HotNewsManager.h; path = ../../../../Manager/HotNew/HotNewsManager.h; sourceTree = "<group>"; };
+		548F644D17192FDF0027040F /* HotNewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = HotNewsItem.h; path = ../../../../Manager/HotNew/HotNewsItem.h; sourceTree = "<group>"; };
+		548F64511719353F0027040F /* HotNewsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotNewsButton.h; sourceTree = "<group>"; };
+		548F64521719353F0027040F /* HotNewsButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotNewsButton.m; sourceTree = "<group>"; };
+		548F645517193AD10027040F /* UINewsChannelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINewsChannelViewController.h; sourceTree = "<group>"; };
+		548F645617193AD10027040F /* UINewsChannelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINewsChannelViewController.m; sourceTree = "<group>"; };
 		54A3EE3C1713280500297364 /* AGCustomAtPlatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomAtPlatListViewController.h; sourceTree = "<group>"; };
 		54A3EE3D1713280500297364 /* AGCustomAtPlatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomAtPlatListViewController.m; sourceTree = "<group>"; };
 		54A3EE3E1713280500297364 /* AGCustomFriendListViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCustomFriendListViewToolbar.h; sourceTree = "<group>"; };
@@ -247,17 +275,9 @@
 		54E9F982170E7F6C00D7B8D9 /* MainFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFrameViewController.m; sourceTree = "<group>"; };
 		54E9F986170E7FD800D7B8D9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		54E9F987170E7FD800D7B8D9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		54E9F98B170E801000D7B8D9 /* UINewsChannelTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINewsChannelTableCell.h; sourceTree = "<group>"; };
-		54E9F98C170E801000D7B8D9 /* UINewsChannelTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINewsChannelTableCell.m; sourceTree = "<group>"; };
-		54E9F98D170E801000D7B8D9 /* UINewsChannelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINewsChannelTableViewController.h; sourceTree = "<group>"; };
-		54E9F98E170E801000D7B8D9 /* UINewsChannelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINewsChannelTableViewController.m; sourceTree = "<group>"; };
-		54E9F98F170E801000D7B8D9 /* UINewsChannelTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINewsChannelTitleView.h; sourceTree = "<group>"; };
-		54E9F990170E801000D7B8D9 /* UINewsChannelTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINewsChannelTitleView.m; sourceTree = "<group>"; };
-		54E9F991170E801000D7B8D9 /* UINewsChannelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINewsChannelViewController.h; sourceTree = "<group>"; };
-		54E9F992170E801000D7B8D9 /* UINewsChannelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINewsChannelViewController.m; sourceTree = "<group>"; };
 		54E9F994170E801000D7B8D9 /* UIUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUserInfoViewController.h; sourceTree = "<group>"; };
 		54E9F995170E801000D7B8D9 /* UIUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUserInfoViewController.m; sourceTree = "<group>"; };
-		54E9F9A0170E801E00D7B8D9 /* NewChannelNotificationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewChannelNotificationKeys.h; path = ../../../Manager/NewsChannel/NewChannelNotificationKeys.h; sourceTree = "<group>"; };
+		54E9F9A0170E801E00D7B8D9 /* NewChannelNotificationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewChannelNotificationKeys.h; path = ../../../../Manager/NewsChannel/NewChannelNotificationKeys.h; sourceTree = "<group>"; };
 		54E9F9A6170EABD400D7B8D9 /* InitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitManager.h; path = ../Manager/init/InitManager.h; sourceTree = "<group>"; };
 		54E9F9AB170EBD6000D7B8D9 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
 		54E9F9AC170EBD6000D7B8D9 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
@@ -362,6 +382,7 @@
 				5411815B170D33ED00E50C9C /* AppDelegate.m */,
 				5411815C170D33ED00E50C9C /* ViewController.h */,
 				5411815D170D33ED00E50C9C /* ViewController.m */,
+				541C20A117189B54006E00DC /* ViewController.xib */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -465,6 +486,34 @@
 				54393BBD1713290F002E6F53 /* WXApiObject.h */,
 			);
 			path = SDKExport;
+			sourceTree = "<group>";
+		};
+		548F643317192DEE0027040F /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				54E9F9A0170E801E00D7B8D9 /* NewChannelNotificationKeys.h */,
+				548F643417192DEE0027040F /* UINewsChannelTableCell.h */,
+				548F643517192DEE0027040F /* UINewsChannelTableCell.m */,
+				548F643617192DEE0027040F /* UINewsChannelTableViewController.h */,
+				548F643717192DEE0027040F /* UINewsChannelTableViewController.m */,
+				548F643817192DEE0027040F /* UINewsChannelTitleView.h */,
+				548F643917192DEE0027040F /* UINewsChannelTitleView.m */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		548F644417192E000027040F /* HotNews */ = {
+			isa = PBXGroup;
+			children = (
+				548F644D17192FDF0027040F /* HotNewsItem.h */,
+				548F644B17192FBB0027040F /* HotNewsManager.h */,
+				548F644917192F270027040F /* HotNewsNotificationKeys.h */,
+				548F644517192EE80027040F /* HotNewListViewController.h */,
+				548F644617192EE80027040F /* HotNewListViewController.m */,
+				548F64511719353F0027040F /* HotNewsButton.h */,
+				548F64521719353F0027040F /* HotNewsButton.m */,
+			);
+			path = HotNews;
 			sourceTree = "<group>";
 		};
 		54A3EE3B1713280500297364 /* Share */ = {
@@ -611,15 +660,10 @@
 		54E9F98A170E801000D7B8D9 /* NewsChannel */ = {
 			isa = PBXGroup;
 			children = (
-				54E9F9A0170E801E00D7B8D9 /* NewChannelNotificationKeys.h */,
-				54E9F98B170E801000D7B8D9 /* UINewsChannelTableCell.h */,
-				54E9F98C170E801000D7B8D9 /* UINewsChannelTableCell.m */,
-				54E9F98D170E801000D7B8D9 /* UINewsChannelTableViewController.h */,
-				54E9F98E170E801000D7B8D9 /* UINewsChannelTableViewController.m */,
-				54E9F98F170E801000D7B8D9 /* UINewsChannelTitleView.h */,
-				54E9F990170E801000D7B8D9 /* UINewsChannelTitleView.m */,
-				54E9F991170E801000D7B8D9 /* UINewsChannelViewController.h */,
-				54E9F992170E801000D7B8D9 /* UINewsChannelViewController.m */,
+				548F645517193AD10027040F /* UINewsChannelViewController.h */,
+				548F645617193AD10027040F /* UINewsChannelViewController.m */,
+				548F643317192DEE0027040F /* Channel */,
+				548F644417192E000027040F /* HotNews */,
 			);
 			path = NewsChannel;
 			sourceTree = "<group>";
@@ -718,6 +762,8 @@
 			children = (
 				54E9FA25170F284F00D7B8D9 /* ResManager.h */,
 				54E9FA26170F284F00D7B8D9 /* ResManager.m */,
+				541C208117188E44006E00DC /* UIImage+ResManager.h */,
+				541C208217188E44006E00DC /* UIImage+ResManager.m */,
 			);
 			name = ResManager;
 			path = ../ResManager;
@@ -761,10 +807,6 @@
 				54CDFF77170DBF2200A4E7B7 /* EGOImageView.h in Headers */,
 				54E9F983170E7F6C00D7B8D9 /* MainFrameViewController.h in Headers */,
 				54E9F988170E7FD800D7B8D9 /* HomeViewController.h in Headers */,
-				54E9F996170E801000D7B8D9 /* UINewsChannelTableCell.h in Headers */,
-				54E9F998170E801000D7B8D9 /* UINewsChannelTableViewController.h in Headers */,
-				54E9F99A170E801000D7B8D9 /* UINewsChannelTitleView.h in Headers */,
-				54E9F99C170E801000D7B8D9 /* UINewsChannelViewController.h in Headers */,
 				54E9F99E170E801000D7B8D9 /* UIUserInfoViewController.h in Headers */,
 				54E9F9B1170EBD6000D7B8D9 /* PullingRefreshTableView.h in Headers */,
 				54E9F9B6170EBDF800D7B8D9 /* NewsListViewController.h in Headers */,
@@ -803,6 +845,13 @@
 				54393BC31713290F002E6F53 /* WXApiObject.h in Headers */,
 				54393BCB17132B10002E6F53 /* IIViewDeckController.h in Headers */,
 				54393BCF17132BD9002E6F53 /* IIWrapController.h in Headers */,
+				541C208317188E44006E00DC /* UIImage+ResManager.h in Headers */,
+				548F643C17192DEE0027040F /* UINewsChannelTableCell.h in Headers */,
+				548F643E17192DEE0027040F /* UINewsChannelTableViewController.h in Headers */,
+				548F644017192DEE0027040F /* UINewsChannelTitleView.h in Headers */,
+				548F644717192EE80027040F /* HotNewListViewController.h in Headers */,
+				548F6453171935400027040F /* HotNewsButton.h in Headers */,
+				548F645717193AD10027040F /* UINewsChannelViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,6 +866,7 @@
 				5411812B170D339400E50C9C /* Frameworks */,
 				5411812C170D339400E50C9C /* CopyFiles */,
 				54CDFEAF170D70C800A4E7B7 /* Headers */,
+				541C20A617189BE1006E00DC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -853,6 +903,20 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		541C20A617189BE1006E00DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541C20A717189BEE006E00DC /* ViewController.xib in Resources */,
+				548F644A17192F270027040F /* HotNewsNotificationKeys.h in Resources */,
+				548F644C17192FBB0027040F /* HotNewsManager.h in Resources */,
+				548F644E17192FDF0027040F /* HotNewsItem.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5411812A170D339400E50C9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -869,10 +933,6 @@
 				54CDFF78170DBF2200A4E7B7 /* EGOImageView.m in Sources */,
 				54E9F984170E7F6C00D7B8D9 /* MainFrameViewController.m in Sources */,
 				54E9F989170E7FD800D7B8D9 /* HomeViewController.m in Sources */,
-				54E9F997170E801000D7B8D9 /* UINewsChannelTableCell.m in Sources */,
-				54E9F999170E801000D7B8D9 /* UINewsChannelTableViewController.m in Sources */,
-				54E9F99B170E801000D7B8D9 /* UINewsChannelTitleView.m in Sources */,
-				54E9F99D170E801000D7B8D9 /* UINewsChannelViewController.m in Sources */,
 				54E9F99F170E801000D7B8D9 /* UIUserInfoViewController.m in Sources */,
 				54E9F9B2170EBD6000D7B8D9 /* PullingRefreshTableView.m in Sources */,
 				54E9F9B7170EBDF800D7B8D9 /* NewsListViewController.m in Sources */,
@@ -904,12 +964,27 @@
 				54A3EE631713280500297364 /* AGCustomViewController.m in Sources */,
 				54393BCC17132B10002E6F53 /* IIViewDeckController.m in Sources */,
 				54393BD017132BD9002E6F53 /* IIWrapController.m in Sources */,
+				541C208417188E44006E00DC /* UIImage+ResManager.m in Sources */,
+				548F643D17192DEE0027040F /* UINewsChannelTableCell.m in Sources */,
+				548F643F17192DEE0027040F /* UINewsChannelTableViewController.m in Sources */,
+				548F644117192DEE0027040F /* UINewsChannelTitleView.m in Sources */,
+				548F644817192EE80027040F /* HotNewListViewController.m in Sources */,
+				548F6454171935400027040F /* HotNewsButton.m in Sources */,
+				548F645817193AD10027040F /* UINewsChannelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		541C20A117189B54006E00DC /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541C20A217189B54006E00DC /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
 		5425136F17118CAA00793F9C /* ShareSDKLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

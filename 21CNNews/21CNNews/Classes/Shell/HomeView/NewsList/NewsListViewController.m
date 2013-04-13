@@ -41,6 +41,8 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveNewsChannelChanged:) name:DidNewsChannelChanged object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didNewsChannelListUpdata:) name:kDidNewsChannelListUpdata object:nil];
         [[NewsListManager shareInstance] loadData:0];
+        
+        self.view.backgroundColor = [UIColor whiteColor];
     }
     
     return self;
@@ -73,13 +75,13 @@
     
     if (!_titleView)
     {
-        _titleView = [[UITitleView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 48)];
-        _titleView.backgroundColor = [UIColor yellowColor];
+        _titleView = [[UITitleView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+        [_titleView setBgImage:resGetImage(@"home/mid/homeNavBarBg.png")];
         [_titleView setTitleText:@"头条"];
-        [_titleView setLeftButtonImage:resGetImage(@"blueArrow.png")];
+        [_titleView setLeftButtonImage:resGetImage(@"home/mid/leftButton.png") frame:CGRectMake(14, 13, 25, 17)];
         [_titleView addLeftButonTarget:self action:@selector(leftButtonClicked) forControlEvents:UIControlEventTouchUpInside];
         
-        [_titleView setRightButtonImage:resGetImage(@"blueArrow.png")];
+        [_titleView setRightButtonImage:resGetImage(@"blueArrow.png") frame:CGRectMake(260, 0, 60, 44)];
         [_titleView addRightButonTarget:self action:@selector(rightButtonClicked) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_titleView];
     }

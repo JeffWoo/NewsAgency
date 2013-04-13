@@ -9,11 +9,15 @@
 #import "UINewsChannelViewController.h"
 #import "UINewsChannelTitleView.h"
 #import "UINewsChannelTableViewController.h"
+#import "HotNewListViewController.h"
+#import "ResManager.h"
 
 @interface UINewsChannelViewController ()
 
+@property (nonatomic, retain) UIImageView* bgImageView;
 @property (nonatomic, retain) UINewsChannelTitleView* titleView;
 @property (nonatomic, retain) UINewsChannelTableViewController* tableViewController;
+@property (nonatomic, retain) HotNewListViewController* hotNewListViewController;
 
 @end
 
@@ -22,8 +26,10 @@
 
 - (void)dealloc
 {
+    [_bgImageView release];
     [_titleView release];
     [_tableViewController release];
+    [_hotNewListViewController release];
     
     [super dealloc];
 }
@@ -32,12 +38,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.titleView = [[[UINewsChannelTitleView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width - 60, 66)] autorelease];
     
-    self.tableViewController = [[[UINewsChannelTableViewController alloc] initWithFrame:CGRectMake(0, 66, self.view.frame.size.width - 60, 300)] autorelease];
+    self.view.backgroundColor = [UIColor clearColor];
+    self.bgImageView = [[[UIImageView alloc] initWithFrame:self.view.bounds] autorelease];
+    self.bgImageView.image = [resGetImage(@"home/left/leftViewBgImage.png") stretchableImageWithLeftCapWidth:160 topCapHeight:200];
+    [self.view addSubview:self.bgImageView];
     
+    self.titleView = [[[UINewsChannelTitleView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width - 45, 44)] autorelease];
     [self.view addSubview:self.titleView];
+    
+    self.tableViewController = [[[UINewsChannelTableViewController alloc] initWithFrame:CGRectMake(0, 44, self.view.frame.size.width - 45, self.view.frame.size.height - 154)] autorelease];
     [self.view addSubview:self.tableViewController.view];
+    
+    self.hotNewListViewController = [[HotNewListViewController alloc] init];
+    [self.hotNewListViewController showInView:self.view frame:CGRectMake(0, self.view.frame.size.height - 110, self.view.frame.size.width - 45, 110)];
+    
+    
+    
 }
 
 

@@ -10,13 +10,14 @@
 #import "UISideBarViewController.h"
 #import "UINewsChannelViewController.h"
 #import "NewsListViewController.h"
+#import "UIUserInfoViewController.h"
 
 @interface HomeViewController ()
 
 @property (nonatomic, retain) UISideBarViewController* sideBarController;
 @property (nonatomic, retain) UINewsChannelViewController* leftController;
 @property (nonatomic, retain) NewsListViewController* mainController;
-@property (nonatomic, retain) UISideBarSubViewController* rightController;
+@property (nonatomic, retain) UIUserInfoViewController* rightController;
 
 @end
 
@@ -59,15 +60,12 @@
         
         _mainController = [[NewsListViewController alloc] init];
         _mainController.view.frame = frame;
-        _mainController.view.backgroundColor = [UIColor redColor];
         
         _leftController = [[UINewsChannelViewController alloc] init];
         _leftController.view.frame = frame;
-        _leftController.view.backgroundColor = [UIColor blueColor];
         
-        _rightController = [[UISideBarSubViewController alloc] init];
+        _rightController = [[UIUserInfoViewController alloc] init];
         _rightController.view.frame = frame;
-        _rightController.view.backgroundColor = [UIColor yellowColor];
         
         _sideBarController = [[UISideBarViewController alloc] init];
         _sideBarController.view.frame = frame;
@@ -80,7 +78,7 @@
         _sideBarController.contentViewController = _mainController;
         _mainController.delegate = _sideBarController;
         
-        _sideBarController.contentOffset = 60.0f;
+        _sideBarController.contentOffset = 45.0f;
         [self.view addSubview:_sideBarController.view];
     }
 }
