@@ -29,12 +29,12 @@
 		546E3129170C86110047B9D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546E3128170C86110047B9D2 /* CoreGraphics.framework */; };
 		546E312F170C86110047B9D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546E312D170C86110047B9D2 /* InfoPlist.strings */; };
 		546E3131170C86110047B9D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E3130170C86110047B9D2 /* main.m */; };
+		5481100A17196E5C0054C020 /* night in Resources */ = {isa = PBXBuildFile; fileRef = 5481100917196E5C0054C020 /* night */; };
 		54CDFE46170D508B00A4E7B7 /* libModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CDFE43170D504700A4E7B7 /* libModel.a */; };
 		54CDFE8B170D584D00A4E7B7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CDFE8A170D584D00A4E7B7 /* libsqlite3.dylib */; };
 		54CDFEE6170D7ECD00A4E7B7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CDFEE5170D7ECD00A4E7B7 /* Security.framework */; };
 		54E9F9C2170EC18C00D7B8D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E9F9C1170EC18C00D7B8D9 /* QuartzCore.framework */; };
 		54E9FA1F170F268F00D7B8D9 /* day in Resources */ = {isa = PBXBuildFile; fileRef = 54E9FA1E170F268F00D7B8D9 /* day */; };
-		54E9FA21170F269700D7B8D9 /* night in Resources */ = {isa = PBXBuildFile; fileRef = 54E9FA20170F269700D7B8D9 /* night */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,12 +94,12 @@
 		546E312E170C86110047B9D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		546E3130170C86110047B9D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		546E3132170C86110047B9D2 /* 21CNNews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "21CNNews-Prefix.pch"; sourceTree = "<group>"; };
+		5481100917196E5C0054C020 /* night */ = {isa = PBXFileReference; lastKnownFileType = folder; path = night; sourceTree = "<group>"; };
 		54CDFE3E170D504700A4E7B7 /* Model.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Model.xcodeproj; path = 21CNNews/preject/Model.xcodeproj; sourceTree = "<group>"; };
 		54CDFE8A170D584D00A4E7B7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		54CDFEE5170D7ECD00A4E7B7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		54E9F9C1170EC18C00D7B8D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		54E9FA1E170F268F00D7B8D9 /* day */ = {isa = PBXFileReference; lastKnownFileType = folder; path = day; sourceTree = "<group>"; };
-		54E9FA20170F269700D7B8D9 /* night */ = {isa = PBXFileReference; lastKnownFileType = folder; path = night; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,7 +240,7 @@
 		54E9FA1D170F266500D7B8D9 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				54E9FA20170F269700D7B8D9 /* night */,
+				5481100917196E5C0054C020 /* night */,
 				54E9FA1E170F268F00D7B8D9 /* day */,
 			);
 			path = Resource;
@@ -342,13 +342,13 @@
 			files = (
 				546E312F170C86110047B9D2 /* InfoPlist.strings in Resources */,
 				54E9FA1F170F268F00D7B8D9 /* day in Resources */,
-				54E9FA21170F269700D7B8D9 /* night in Resources */,
 				5425136617118C6500793F9C /* ShareSDKLocalizable.strings in Resources */,
 				5425136817118C6500793F9C /* Resource.bundle in Resources */,
 				541C20A517189BC9006E00DC /* ViewController.xib in Resources */,
 				542D7AB31719103E00E878D7 /* Default-568h@2x.png in Resources */,
 				542D7AB41719103E00E878D7 /* Default.png in Resources */,
 				542D7AB51719103E00E878D7 /* Default@2x.png in Resources */,
+				5481100A17196E5C0054C020 /* night in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
