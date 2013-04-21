@@ -1,10 +1,15 @@
-//
-//  UserSerialNumManager.m
-//  Model
-//
-//  Created by chenggk on 13-4-5.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: UserSerialNumManager.m
+ *
+ * Description	: app序列号管理器，主要进行app序列号的更新获取及管理工作
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "UserSerialNumManager.h"
 #import "ServicerDefine.h"
@@ -67,7 +72,7 @@
 }
 
 
-- (void)checkUserSerialNum
+- (void)checkUserSerialNum  ///< 检测并更新app序列号
 {
     if (![self checkAndCreateUserSerialNumTable])
     {
@@ -80,13 +85,13 @@
     NSURL *url= [NSURL URLWithString:urlStr];
     NSURLRequest *req= [NSURLRequest requestWithURL:url];
     
-    LSURLDispatchOperation *op= [[LSURLDispatcher sharedDispatcher] dispatchShortRequest:req delegate:self];
+    LSURLDispatchOperation *op= [[LSURLDispatcher sharedDispatcher] dispatchShortRequest:req delegate:self];    ///< 建立一个http请求，该任务将在子线程执行，具体操作逻辑，均封装于LSURLDispatchOperation内部
     
-    [op start];
+    [op start]; ///< 启动任务
 }
 
 
-
+///< 检测是否创建app序列号所对应的数据库表格
 - (BOOL)checkAndCreateUserSerialNumTable
 {
     __block BOOL bNeedToCreateTable = YES;
@@ -113,6 +118,7 @@
 }
 
 
+//获取app序列号
 - (NSString*)getUserSerialNum
 {
     if (!_userSerialNum)
@@ -139,6 +145,7 @@
 }
 
 
+//更新app序列号
 - (void)updataUserSerialNum:(NSString*)userSerialNum
 {
     @synchronized(self)
@@ -161,6 +168,7 @@
 
 
 #pragma mark LSURLDispatchDelegate
+//注意：以下回调均发生在子线程
 - (void) dispatchOperation:(LSURLDispatchOperation *)operation didReceiveResponse:(NSURLResponse *)response
 {
     self.data = [[[NSMutableData alloc] init] autorelease];
@@ -179,12 +187,13 @@
 }
 
 
+//成功接收到网络回调
 - (void) dispatchOperationDidFinish:(LSURLDispatchOperation *)operation
 {
-    NSString* userSerialNum = [UserSerialNumJSDataParser parser:self.data];
+    NSString* userSerialNum = [UserSerialNumJSDataParser parser:self.data]; ///< 解析json数据，获取app序列号
     if (userSerialNum)
     {
-        [self performSelectorOnMainThread:@selector(updataUserSerialNum:) withObject:userSerialNum waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(updataUserSerialNum:) withObject:userSerialNum waitUntilDone:NO];   ///< 主线程更新app序列号
     }
     
     self.data = nil;

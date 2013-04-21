@@ -1,10 +1,15 @@
-//
-//  SplashManager.m
-//  Model
-//
-//  Created by chenggk on 13-4-5.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: SplashManager.m
+ *
+ * Description	: 启动画面管理器
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "SplashManager.h"
 #import "LSThreadPool.h"
@@ -16,7 +21,10 @@
 #import "ImageLoder.h"
 #import <UIKit/UIKit.h>
 
+//启动图片过期时间
 #define __SplashManager_SplashImage_Expire_Time__       @"__SplashManager_SplashImage_Expire_Time__"
+
+//启动图片对应url
 #define __SplashManager_SplashImage_URL__               @"__SplashManager_SplashImage_URL__"
 
 @interface SplashManager()<LSURLDispatchDelegate>
@@ -70,27 +78,29 @@
 }
 
 
+//获取启动图片
 - (NSString*)getSplashImagePath
 {
     return [NSString stringWithFormat:@"%@/spalsh/Default.png", [iPhoneTools documentPath]];
 }
 
 
+//检测启动图片是否存在
 - (BOOL)isHasSplashImage
 {
     NSString* splashImagePath = [self getSplashImagePath];
     
-    BOOL bRet = [iPhoneTools isFileExists:splashImagePath];
+    BOOL bRet = [iPhoneTools isFileExists:splashImagePath]; ///< 启动图片是否存在
     if (bRet)
     {
         NSDate* expireTime = [[NSUserDefaults standardUserDefaults] objectForKey:__SplashManager_SplashImage_Expire_Time__];
-        bRet = (expireTime == [expireTime laterDate:[NSDate date]]);
+        bRet = (expireTime == [expireTime laterDate:[NSDate date]]);    ///< 检测启动图片是否超过可展现时间
     }
     
     return bRet;
 }
 
-
+//检测并更新启动图片
 - (void)checkAndUpDataSplashImage
 {
     NSURL *url= [NSURL URLWithString:@"http://k.21cn.com/cloundapp/api/getSplashImages.do?accessToken=fewtewtew&userSerialNum=qewq"];
@@ -102,6 +112,7 @@
 }
 
 
+//获取启动图片
 - (UIImage* )getSplashImage
 {
     if ([self isHasSplashImage])
@@ -109,37 +120,47 @@
         return [UIImage imageWithContentsOfFile:[self getSplashImagePath]];
     }
     
+    //如果不存在服务器下发的可用图片，则使用默认启动图片
     return [UIImage imageNamed:@"Default.png"];
 }
 
 
+//处理服务器返回的json数据
 - (void)dealResult:(NSData*)jsData
 {
     JSONDecoder *jd = [[[JSONDecoder alloc] init] autorelease];
     
     NSDictionary *jsRet = [jd objectWithData:jsData];
     
-    NSString* imageURL = [jsRet objectForKey:@"imgSrc"];
-    NSString* expireTime = [jsRet objectForKey:@"expireTime"];
+    NSString* imageURL = [jsRet objectForKey:@"imgSrc"];        ///< 获取图片url
+    NSString* expireTime = [jsRet objectForKey:@"expireTime"];  ///< 获取过期时间
     
     NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+
     NSDate *expireData = nil;
-//    NSDate *expireData = [dateFormatter dateFromString:expireTime];
-//    if (!expireTime)
+    @try
     {
-        expireData = [NSDate distantFuture];
+        expireData = [dateFormatter dateFromString:expireTime];
+    }@catch (NSException * e)
+    {
+        expireData = nil;
     }
     
-    [[NSUserDefaults standardUserDefaults] setObject:expireData forKey:__SplashManager_SplashImage_Expire_Time__];
-    
-    
-    NSString* oldImageUrl = [[NSUserDefaults standardUserDefaults] objectForKey:__SplashManager_SplashImage_URL__];
-    
-    if (!(oldImageUrl && [oldImageUrl isEqualToString:imageURL]))
+    if (!expireTime)    ///< 如果服务器返回的过期时间不符合协议标准或者不存在，则认为该启动图片当天过期
     {
-        [[NSUserDefaults standardUserDefaults] setObject:imageURL forKey:__SplashManager_SplashImage_URL__];
-        [self.imageLoader loadImage:imageURL toFile:[self getSplashImagePath]];
+        expireData = [NSDate date];
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:expireData forKey:__SplashManager_SplashImage_Expire_Time__];  ///< 记录过期时间
+    
+    
+    NSString* oldImageUrl = [[NSUserDefaults standardUserDefaults] objectForKey:__SplashManager_SplashImage_URL__]; ///< 获取久启动图片url
+    
+    if (!(oldImageUrl && [oldImageUrl isEqualToString:imageURL]))   ///< 图片url是否发生变化
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:imageURL forKey:__SplashManager_SplashImage_URL__];    ///< 记录新的启动图片url
+        [self.imageLoader loadImage:imageURL toFile:[self getSplashImagePath]]; ///< 加载启动图片
     }
 }
 

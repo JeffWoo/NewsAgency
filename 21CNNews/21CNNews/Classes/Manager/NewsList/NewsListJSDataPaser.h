@@ -1,10 +1,15 @@
-//
-//  NewsListJSDataPaser.h
-//  Model
-//
-//  Created by chenggk on 13-4-6.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: NewsListJSDataPaser.h
+ *
+ * Description	: 新闻列表json数据解析器
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/6, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import <Foundation/Foundation.h>
 

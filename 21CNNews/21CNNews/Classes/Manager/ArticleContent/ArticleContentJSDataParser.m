@@ -1,10 +1,15 @@
-//
-//  ArticleContentJSDataParser.m
-//  Model
-//
-//  Created by chenggk on 13-4-7.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: ArticleContentJSDataParser.m
+ *
+ * Description	: 新闻正文json数据解析器
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/6, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "ArticleContentJSDataParser.h"
 #import "ArticleContentObject.h"

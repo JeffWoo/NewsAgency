@@ -10,10 +10,10 @@
 
 @interface UITitleView()
 
-@property (nonatomic, retain) UIImageView* bgImageView;
-@property (nonatomic, retain) UIButton* leftButton;
-@property (nonatomic, retain) UILabel* titleLabel;
-@property (nonatomic, retain) UIButton* rightButton;
+@property (nonatomic, retain) UIImageView* bgImageView; ///< 背景
+@property (nonatomic, retain) UIButton* leftButton;     ///< 左边按钮
+@property (nonatomic, retain) UILabel* titleLabel;      ///< 中间title
+@property (nonatomic, retain) UIButton* rightButton;    ///< 右边按钮
 
 @end
 

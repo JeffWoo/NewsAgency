@@ -1,10 +1,15 @@
-//
-//  SettingManager.m
-//  Model
-//
-//  Created by chenggk on 13-4-5.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: SettingManager.m
+ *
+ * Description	: 系统设置管理器
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "SettingManager.h"
 #import "SettingKey.h"

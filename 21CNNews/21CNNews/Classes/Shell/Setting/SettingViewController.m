@@ -1,10 +1,15 @@
-//
-//  SettingViewController.m
-//  Shell
-//
-//  Created by chenggk on 13-4-5.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: SettingViewController.m
+ *
+ * Description	: 系统设置view controller
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "SettingViewController.h"
 #import "SettingTableViewController.h"
@@ -14,10 +19,9 @@
 
 @interface SettingViewController ()
 
-@property (nonatomic, retain) UITitleView* titleView;
-@property (nonatomic, retain) UITableView* tableView;
-@property (nonatomic, retain) SettingTableViewController* tableViewController;
-@property (nonatomic, retain) SettingCellSelectedHandle* handle;
+@property (nonatomic, retain) UITitleView* titleView;       ///< 系统设置界面标题栏
+@property (nonatomic, retain) SettingTableViewController* tableViewController;  ///< 系统设置tableview controller
+@property (nonatomic, retain) SettingCellSelectedHandle* handle;    ///< 系统设置命令处理器
 
 @end
 
@@ -92,7 +96,7 @@
     }
     
     [parentViewController presentViewController:self animated:YES completion:nil];
-    [self retain];
+    [self retain];  ///< retain+1是为了使得系统设置界面能够实现生命周期自管理，当系统设置界面收起时，将对其进行release，从而析构自己
 }
 
 
@@ -100,7 +104,7 @@
 {
     [self dismissViewControllerAnimated:YES completion:^()
      {
-         [self release];
+         [self release];    ///< 对应- (void)showInUIViewController:(UIViewController*)parentViewController 中的[sele retain]
      }];
 }
 

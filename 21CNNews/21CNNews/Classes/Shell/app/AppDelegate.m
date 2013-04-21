@@ -41,7 +41,7 @@
     _splashViewController = nil;
 }
 
-
+//初始化主程序
 - (void)mainViewInit
 {
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
@@ -67,7 +67,7 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     
-    _splashViewController = [[SplashViewController alloc] init];
+    _splashViewController = [[SplashViewController alloc] init];    ///<  初始化启动画面
     self.window.rootViewController = _splashViewController;
     [self.window makeKeyAndVisible];
     

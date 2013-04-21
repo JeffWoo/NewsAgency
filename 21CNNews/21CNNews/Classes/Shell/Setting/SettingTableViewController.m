@@ -1,10 +1,15 @@
-//
-//  SettingTableViewController.m
-//  Shell
-//
-//  Created by chenggk on 13-4-6.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: SettingTableViewController.m
+ *
+ * Description	: 系统设置table view controller
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "SettingTableViewController.h"
 #import "UITitleView.h"

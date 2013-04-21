@@ -1,10 +1,15 @@
-//
-//  UINewsChannelTitleView.m
-//  Shell
-//
-//  Created by chenggk on 13-4-4.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: UINewsChannelTitleView.m
+ *
+ * Description	: 新闻频道标题栏
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/4, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "UINewsChannelTitleView.h"
 #import "NSNotificationCenterKeys.h"
@@ -12,9 +17,9 @@
 
 @interface UINewsChannelTitleView ()
 
-@property (nonatomic, retain) UIImageView* bgImageView;
-@property (nonatomic, retain) UIButton* addButton;
-@property (nonatomic, retain) UIButton* settingButton;
+@property (nonatomic, retain) UIImageView* bgImageView;     ///< 背景
+@property (nonatomic, retain) UIButton* addButton;          ///< 添加按钮
+@property (nonatomic, retain) UIButton* settingButton;      ///< 设置按钮
 
 @end
 
@@ -91,8 +96,10 @@
 }
 
 
+//设置按钮响应函数
 - (void)settingButtonclicked
 {
+    //发送系统设置按钮被按下消息，该消息最终将被MainFrameViewController接收，并弹出系统设置界面
     [[NSNotificationCenter defaultCenter] postNotificationName:ShowSettingViewNotification object:self userInfo:nil];
 }
 

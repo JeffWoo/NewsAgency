@@ -9,6 +9,7 @@
 #ifndef Model_HotNewsNotificationKeys_h
 #define Model_HotNewsNotificationKeys_h
 
+//热点新闻列表更新通知key值
 #define kHotNewsListChanged          @"kHotNewsListChanged"
 
 #endif

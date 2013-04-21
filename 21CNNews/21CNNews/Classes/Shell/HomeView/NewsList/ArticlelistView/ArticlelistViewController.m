@@ -59,6 +59,7 @@
 }
 
 
+//在parentView中展现
 - (void)showInViwe:(UIView*)parentView frame:(CGRect)frame
 {
     self.view.frame = frame;
@@ -75,6 +76,7 @@
 }
 
 
+//加载一个新闻频道
 - (void)loadChannel:(NewsChannelObject*)channelObject
 {
     if (self.currentChannel.regionId == channelObject.regionId)
@@ -126,12 +128,14 @@
 
 
 #pragma mark - PullingRefreshTableViewDelegate
+//上拉刷新
 - (void)pullingTableViewDidStartRefreshing:(PullingRefreshTableView *)tableView
 {
     [[NewsListManager shareInstance] refreshData:self.currentChannel];
 }
 
 
+//下拉继续加载
 - (void)pullingTableViewDidStartLoading:(PullingRefreshTableView *)tableView
 {
     [[NewsListManager shareInstance] loadData:self.currentChannel];
@@ -161,6 +165,7 @@
 
 
 #pragma mark NSNotificationCenter call backfunction
+//加载接收通知处理函数
 - (void)didReceiveNewListLoadFinish:(NSNotification*)notification
 {
     NSDictionary *dictionary = [notification userInfo];
@@ -177,7 +182,7 @@
     }
     
     int regionID = [[dictionary objectForKey:kParam_ChannelRegionId] intValue];
-    if (self.currentChannel && regionID != self.currentChannel.regionId)
+    if (self.currentChannel && regionID != self.currentChannel.regionId) 
     {
         return;
     }

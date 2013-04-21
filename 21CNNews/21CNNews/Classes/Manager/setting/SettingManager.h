@@ -1,16 +1,22 @@
-//
-//  SettingManager.h
-//  Model
-//
-//  Created by chenggk on 13-4-5.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: SettingManager.h
+ *
+ * Description	: 系统设置管理器
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import <Foundation/Foundation.h>
 #import "SettingCellObject.h"
 
 @interface SettingManager : NSObject
 
+//获取单例对象
 + (SettingManager*)shareInstance;
 
 #pragma mark getter

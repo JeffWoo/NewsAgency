@@ -1,10 +1,15 @@
-//
-//  HotNewsItem.m
-//  Model
-//
-//  Created by chenggk on 13-4-13.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: HotNewsItem.mm
+ *
+ * Description	: 热地新闻结构
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/13, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "HotNewsItem.h"
 

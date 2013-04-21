@@ -163,9 +163,6 @@
 		546E3118170C86110047B9D2 = {
 			isa = PBXGroup;
 			children = (
-				541B91CC17108E6200307FE0 /* libicucore.dylib */,
-				541B91CA17108E5600307FE0 /* MessageUI.framework */,
-				541B91C817108E4400307FE0 /* SystemConfiguration.framework */,
 				5411816E170D348E00E50C9C /* Shell.xcodeproj */,
 				54CDFE3E170D504700A4E7B7 /* Model.xcodeproj */,
 				546E312A170C86110047B9D2 /* 21CNNews */,
@@ -185,7 +182,10 @@
 		546E3123170C86110047B9D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				541B91CC17108E6200307FE0 /* libicucore.dylib */,
 				54CDFE8A170D584D00A4E7B7 /* libsqlite3.dylib */,
+				541B91CA17108E5600307FE0 /* MessageUI.framework */,
+				541B91C817108E4400307FE0 /* SystemConfiguration.framework */,
 				54E9F9C1170EC18C00D7B8D9 /* QuartzCore.framework */,
 				54CDFEE5170D7ECD00A4E7B7 /* Security.framework */,
 				546E3124170C86110047B9D2 /* UIKit.framework */,

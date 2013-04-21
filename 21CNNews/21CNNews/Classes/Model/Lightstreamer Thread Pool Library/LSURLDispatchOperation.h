@@ -57,16 +57,16 @@
 
 #pragma mark -
 #pragma mark Initialization
-
+//构造函数：建立一个http请求对象
 - (id) initWithURLRequest:(NSURLRequest *)request endPoint:(NSString *)endPoint delegate:(id <LSURLDispatchDelegate>)delegate gatherData:(BOOL)gatherData isLong:(BOOL)isLong;
 
 
 #pragma mark -
 #pragma mark Execution
 
-- (void) start;
-- (void) waitForCompletion;
-- (void) cancel;
+- (void) start;             ///< 启动http请求
+- (void) waitForCompletion; ///< 等待请求完成
+- (void) cancel;            ///< 取消请求
 
 
 #pragma mark -

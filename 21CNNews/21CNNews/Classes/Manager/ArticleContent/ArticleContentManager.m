@@ -53,7 +53,7 @@
     [super dealloc];
 }
 
-
+//检测并创建新闻正文所对应的数据库表格
 - (void)checkArticleContentTable
 {
     [[DBManager shareIntance].db inDatabase:^(FMDatabase *db){
@@ -78,7 +78,8 @@
     
 }
 
-
+//加载对应新闻
+//服务器返回的图片大小需要由客户端指定
 - (void)loadArticleContent:(int)articleId imageSize:(CGSize)imageSize
 {
     NSString* userSerialNum = [[UserSerialNumManager shareInstance] getUserSerialNum];
@@ -94,18 +95,15 @@
 }
 
 
+//通知外部监听对象新闻正文已经更新
 - (void)notifyArticleContentUpdate:(ArticleContentObject*)object
 {
-//    UIWebView* webview = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
-//    [webview loadHTMLString:object.content baseURL:nil];
-//    [[[UIApplication sharedApplication] keyWindow] addSubview:webview];
-    
-    
     NSDictionary *userInfo = [[[NSDictionary alloc] initWithObjectsAndKeys:object, kParam_ArticleObject, nil] autorelease];
     [[NSNotificationCenter defaultCenter] postNotificationName:kNotifyArticleContentUpdate object:self userInfo:userInfo];
 }
 
 
+//更新数据库表格
 - (void)updataTable:(ArticleContentObject*)object
 {
     if (!object)
@@ -158,10 +156,11 @@
 
 - (void) dispatchOperation:(LSURLDispatchOperation *)operation didFailWithError:(NSError *)error
 {
-    //    [self performSelectorOnMainThread:@selector(notifyNewsListLoadFailed) withObject:nil waitUntilDone:NO];
+
 }
 
 
+//成功加载新闻正文
 - (void) dispatchOperationDidFinish:(LSURLDispatchOperation *)operation
 {
     if (!self.data)
@@ -169,9 +168,9 @@
         return;
     }
     
-    ArticleContentObject* object = [ArticleContentJSDataParser parser:self.data];
+    ArticleContentObject* object = [ArticleContentJSDataParser parser:self.data];   ///< 解析服务器返回的jsonshuju
         
-    [self updataTable:object];
+    [self updataTable:object];  ///< 更新数据库表格
     
     self.data = nil;
 }

@@ -1,10 +1,15 @@
-//
-//  UIArticleListTableViewCell.m
-//  Shell
-//
-//  Created by chenggk on 13-4-6.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: UIArticleListTableViewCell.m
+ *
+ * Description	: 普通新闻列表table view cell
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "UIArticleListTableViewCell.h"
 #import "EGOImageView.h"
@@ -12,10 +17,10 @@
 
 @interface UIArticleListTableViewCell()
 
-@property (nonatomic, retain) EGOImageView* eGoImageView;
-@property (nonatomic, retain) NewsListItem* newsListItem;
-@property (nonatomic, retain) UILabel* titleLebel;
-@property (nonatomic, retain) UILabel* sourceNameLabel;
+@property (nonatomic, retain) EGOImageView* eGoImageView;   ///< 新闻图片
+@property (nonatomic, retain) NewsListItem* newsListItem;   ///< 新闻列表数据
+@property (nonatomic, retain) UILabel* titleLebel;          ///< 新闻标题
+@property (nonatomic, retain) UILabel* sourceNameLabel;     ///< 新闻来源
 
 @end
 
@@ -70,7 +75,7 @@
             [self addSubview:self.eGoImageView];
         }
         
-        self.eGoImageView.imageURL = [NSURL URLWithString:item.thumbImgUrl];
+        self.eGoImageView.imageURL = [NSURL URLWithString:item.thumbImgUrl];    ///< 重新设置图片url，则EGOImageView会自动加载新的图片，注意：需在主线程操作
         self.eGoImageView.hidden = NO;
         self.eGoImageView.frame = CGRectMake(12, 12, 98, 72);
     }

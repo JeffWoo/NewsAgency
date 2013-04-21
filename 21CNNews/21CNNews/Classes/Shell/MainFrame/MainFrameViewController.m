@@ -1,10 +1,15 @@
-//
-//  MainFrameViewController.m
-//  Shell
-//
-//  Created by chenggk on 13-4-5.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: MainFrameViewController.m
+ *
+ * Description	: 主界面view controller，主页、系统设置界面等均是加载在该view controller中
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "MainFrameViewController.h"
 #import "HomeViewController.h"
@@ -13,7 +18,7 @@
 
 @interface MainFrameViewController ()
 
-@property (nonatomic, retain) HomeViewController* homeViewController;
+@property (nonatomic, retain) HomeViewController* homeViewController;   ///< 主页view controller
 
 @end
 
@@ -38,6 +43,7 @@
 
 - (void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [_homeViewController release];
     [super dealloc];
 }
@@ -65,7 +71,7 @@
 
 
 #pragma mark notification call back function
-- (void)showSettingView
+- (void)showSettingView ///< 弹出系统设计界面
 {
     SettingViewController* settingViewControll = [[[SettingViewController alloc] init] autorelease];
     [settingViewControll showInUIViewController:self];

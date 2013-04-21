@@ -1,31 +1,36 @@
-//
-//  NewsListItem.h
-//  Model
-//
-//  Created by chenggk on 13-4-6.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: NewsListCommonDef.h
+ *
+ * Description	: 新闻数据结构，对应服务器返回的json数据
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/6, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import <Foundation/Foundation.h>
 
 @interface NewsListItem : NSObject
 
-@property (nonatomic, readonly) int articleId;
-@property (nonatomic, readonly) NSString* articleUrl;
-@property (nonatomic, readonly) NSDate* publishTime;
-@property (nonatomic, readonly) int regionId;
+@property (nonatomic, readonly) int articleId;          ///< 新闻id
+@property (nonatomic, readonly) NSString* articleUrl;   ///< 新闻内容对应url
+@property (nonatomic, readonly) NSDate* publishTime;    ///< 发表时间
+@property (nonatomic, readonly) int regionId;           ///< 该新闻所对应的新闻频道
 @property (nonatomic, readonly) int sourceId;
 @property (nonatomic, readonly) NSString* sourceName;
-@property (nonatomic, readonly) NSString* summary;
-@property (nonatomic, readonly) NSString* thumbImgUrl;
-@property (nonatomic, readonly) NSString* title;
-@property (nonatomic, readonly) NSDate* topTime;
-@property (nonatomic, readonly) BOOL isHot;
+@property (nonatomic, readonly) NSString* summary;      ///< 新闻正文简述
+@property (nonatomic, readonly) NSString* thumbImgUrl;  ///< 新闻图片url
+@property (nonatomic, readonly) NSString* title;        ///< 新闻标题
+@property (nonatomic, readonly) NSDate* topTime;        ///< 置顶时间
+@property (nonatomic, readonly) BOOL isHot;             ///< 是否hot新闻
 @property (nonatomic, readonly) BOOL isRecommend;
 @property (nonatomic, readonly) BOOL isSpecial;
-@property (nonatomic, readonly) int reviewNum;
-@property (nonatomic, readonly) BOOL showBigPic;
-@property (nonatomic, readonly) NSArray* reviewList;
+@property (nonatomic, readonly) int reviewNum;          ///< 评论个数
+@property (nonatomic, readonly) BOOL showBigPic;        ///< 是否展现大图新闻
+@property (nonatomic, readonly) NSArray* reviewList;    ///< 评论列表
 @property (nonatomic, readonly) int pageNo;
 
 

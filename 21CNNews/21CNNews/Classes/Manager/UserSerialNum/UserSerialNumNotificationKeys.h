@@ -9,6 +9,7 @@
 #ifndef Model_UserSerialNumNotificationKeys_h
 #define Model_UserSerialNumNotificationKeys_h
 
+//app序列号更新NSNotificationCenter通知key值
 #define kUserSerialNumDidChanged          @"kUserSerialNumDidChanged"
 
 #endif

@@ -4,8 +4,8 @@
 
 @interface DbFileManager : NSObject
 
-+ (NSString *)dbFilePath;
++ (NSString *)dbFilePath;   ///< 获取数据库所在路径
 
-+ (NSString*)dbName;
++ (NSString*)dbName;        ///< 获取数据库名称
 
 @end

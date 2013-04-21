@@ -48,7 +48,7 @@
 }
 
 
-
+//检测并创建新闻列表对应的数据库表结构
 - (void)checkNewsListTable
 {
     [[DBManager shareIntance].db inDatabase:^(FMDatabase *db){
@@ -74,7 +74,7 @@
 }
 
 
-
+//获取对应频道当前所加载的最大页数
 - (int)getMaxPageIndex:(int)regionID
 {
     __block int pageIndex = 1;
@@ -91,6 +91,7 @@
 }
 
 
+//获取对应新闻类型在服务器所对应的值
 - (int)getArtiCleTypeNum:(NewsChannelArticleType)type
 {
     int ret = 11;
@@ -116,6 +117,7 @@
 }
 
 
+//加载对应频道对应页面
 - (void)loadPage:(int)pageIndex channel:(NewsChannelObject*)channelObject
 {
     NSString* userSerialNum = [[UserSerialNumManager shareInstance] getUserSerialNum];
@@ -145,6 +147,7 @@
 }
 
 
+//清空频道对应新闻内容，一般用于刷新该频道新闻列表后，清除久数据
 - (void)clear:(int)regionId
 {
     [[DBManager shareIntance].db inDatabase:^(FMDatabase *db){
@@ -156,6 +159,7 @@
 }
 
 
+//通知外部监听对象新闻列表发生变化
 - (void)notifyNewsListChanged:(NSNumber*)regionId
 {
     NSDictionary *userInfo = [[[NSDictionary alloc] initWithObjectsAndKeys:regionId, kParam_ChannelRegionId, nil] autorelease];
@@ -164,12 +168,14 @@
 }
 
 
+//通知外部监听对象新闻列表加载失败
 - (void)notifyNewsListLoadFailed
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:kNewListLoadFailed object:self userInfo:nil];
 }
 
 
+//更新数据库表格
 - (void)updataTable:(NSArray*)list
 {
     if ([list count] <= 0)
@@ -240,6 +246,7 @@
 }
 
 
+//获取对应频道所有新闻
 - (NSArray*)getNewsList:(int)regionId
 {    
     __block NSMutableArray* list = [NSMutableArray arrayWithCapacity:20];
@@ -331,10 +338,6 @@
         return;
     }
     
-//    const char* buf = (const char*)[self.data bytes];
-//    NSData* newData = [NSData dataWithBytes:buf+13 length:strlen(buf) - 19];
-//    NSArray* list = [NewsListJSDataPaser parser:newData];
-    
     NSArray* list = [NewsListJSDataPaser parser:self.data];
     
     [self updataTable:list];
@@ -345,6 +348,7 @@
 
 - (void)dispatchOperationWillDestoryEx
 {
+    //通知外部监听对象新闻列表加载结束
     [[NSNotificationCenter defaultCenter] postNotificationName:kNewListLoadFinish object:self userInfo:nil];
 }
 

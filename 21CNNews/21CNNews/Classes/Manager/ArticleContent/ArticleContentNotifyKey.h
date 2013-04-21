@@ -9,7 +9,10 @@
 #ifndef Model_ArticleContentNotifyKey_h
 #define Model_ArticleContentNotifyKey_h
 
+//新闻正文更新通知key值
 #define kNotifyArticleContentUpdate     @"kNotifyArticleContentUpdate"
+
+//新闻正文更新通知参数key值
 #define kParam_ArticleObject            @"kParam_ArticleObject"
 
 #endif

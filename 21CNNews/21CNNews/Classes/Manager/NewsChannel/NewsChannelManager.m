@@ -1,10 +1,15 @@
-//
-//  NewsChannelManager.m
-//  Model
-//
-//  Created by chenggk on 13-4-4.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: NewsChannelManager.m
+ *
+ * Description	: 新闻频道列表管理器
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "NewsChannelManager.h"
 #import "DBCommonHeader.h"
@@ -48,7 +53,7 @@
     self = [super init];
     if (self)
     {
-        [self updata];
+        [self updata];  ///< 启动时进行一次频道列表检测更新操作
     }
     
     return self;
@@ -62,17 +67,19 @@
 }
 
 
+//更新频道列表
 - (void)updata
 {
     NSURL *url= [NSURL URLWithString:@"http://auto.21cn.com/api/client/v2/getSubscribeList.do?accessToken=fewtewtew&userSerialNum=qewq"];
     NSURLRequest *req= [NSURLRequest requestWithURL:url];
     
-    LSURLDispatchOperation *op= [[LSURLDispatcher sharedDispatcher] dispatchShortRequest:req delegate:self];
+    LSURLDispatchOperation *op= [[LSURLDispatcher sharedDispatcher] dispatchShortRequest:req delegate:self];    ///< 建立一个http请求
     
     [op start];
 }
 
 
+//检测频道列表对应数据库表格是否存在，如不存在，则创建一个
 - (void)checkNewsChannelTable
 {
     [[DBManager shareIntance].db inDatabase:^(FMDatabase *db){
@@ -91,17 +98,6 @@
         if (bNeedToCreateTable)
         {
             [db executeUpdate:@"CREATE TABLE news_channel_table (regionId integer NOT NULL PRIMARY KEY, articleType integer NOT NULL, title text NOT NULL, thumbImgUrl text NOT NULL, isCurrentPage bool NOT NULL)"];
-            /*
-            [db executeUpdate:@"insert into news_channel_table values (?,?,?,?)", [NSNumber numberWithInt:501], [NSNumber numberWithInt:0], @"头条", [NSNumber numberWithInt:0]];
-            [db executeUpdate:@"insert into news_channel_table values (?,?,?,?)", [NSNumber numberWithInt:502], [NSNumber numberWithInt:0], @"时事", [NSNumber numberWithInt:0]];
-            [db executeUpdate:@"insert into news_channel_table values (?,?,?,?)", [NSNumber numberWithInt:503], [NSNumber numberWithInt:0], @"社会", [NSNumber numberWithInt:0]];
-            [db executeUpdate:@"insert into news_channel_table values (?,?,?,?)", [NSNumber numberWithInt:504], [NSNumber numberWithInt:0], @"娱乐", [NSNumber numberWithInt:0]];
-            [db executeUpdate:@"insert into news_channel_table values (?,?,?,?)", [NSNumber numberWithInt:505], [NSNumber numberWithInt:0], @"体育", [NSNumber numberWithInt:0]];
-            [db executeUpdate:@"insert into news_channel_table values (?,?,?,?)", [NSNumber numberWithInt:506], [NSNumber numberWithInt:0], @"财经", [NSNumber numberWithInt:0]];
-            [db executeUpdate:@"insert into news_channel_table values (?,?,?,?)", [NSNumber numberWithInt:507], [NSNumber numberWithInt:0], @"军事", [NSNumber numberWithInt:0]];
-            [db executeUpdate:@"insert into news_channel_table values (?,?,?,?)", [NSNumber numberWithInt:508], [NSNumber numberWithInt:0], @"科技", [NSNumber numberWithInt:0]];
-            [db executeUpdate:@"insert into news_channel_table values (?,?,?,?)", [NSNumber numberWithInt:509], [NSNumber numberWithInt:0], @"笑话", [NSNumber numberWithInt:0]];
-             */
         }
         
     }];
@@ -109,7 +105,7 @@
 }
 
 
-
+//从FMResultSet中获取一个频道数据
 - (NewsChannelObject*)getCurObjectFromResultSet:(FMResultSet*)resultSet
 {
     NSString *title = [resultSet stringForColumn:@"title"];
@@ -126,6 +122,7 @@
 }
 
 
+//获取默认频道
 - (NewsChannelObject*)getDefaultChannel
 {
     __block NewsChannelObject* object = nil;
@@ -153,6 +150,7 @@
 }
 
 
+//获取频道列表
 - (NewChannelList*)getNewChannelList
 {
     [self checkNewsChannelTable];
@@ -172,12 +170,14 @@
 }
 
 
+//通知外部监听对象：频道列表已经更新完毕
 - (void)notifyNewsChannelChanged
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:kDidNewsChannelListUpdata object:self userInfo:nil];
 }
 
 
+//更新频道列表数据库表格内容
 - (void)updataTable:(NewChannelList*)list
 {
     [[DBManager shareIntance].db inDatabase:^(FMDatabase *db){
@@ -224,6 +224,7 @@
 }
 
 
+//成功接收到服务器返回json数据
 - (void) dispatchOperationDidFinish:(LSURLDispatchOperation *)operation 
 {
     NewChannelList* list = [NewsChannelJSDataParser parser:self.data];

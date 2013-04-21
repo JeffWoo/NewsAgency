@@ -9,6 +9,7 @@
 #ifndef Model_NewChannelNotificationKeys_h
 #define Model_NewChannelNotificationKeys_h
 
+//新闻频道更新NSNotificationCenter通知key值
 #define kDidNewsChannelListUpdata      @"kDidNewsChannelListUpdata"
 
 #endif

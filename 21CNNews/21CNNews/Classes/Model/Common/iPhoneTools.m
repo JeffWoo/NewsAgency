@@ -98,16 +98,17 @@ char* getIMEI(char* buffer)
         str = [[UIDevice currentDevice] performSelector:sel];
     }
     
+    //< 如果uniqueIdentifier获取不到，则使用mac地址代替
 	if (str == nil || [str compare:@""] == NSOrderedSame || str.length<20)
 	{
 		const char * iPhoneMac = getiPhoneMac();
 		if (iPhoneMac)
 		{
-			strcpy(buffer, getMD5(iPhoneMac));
+			strcpy(buffer, getMD5(iPhoneMac));  ///< 对mac地址进行md5加密
 		}
 		else
 		{
-			strcpy(buffer, "UCWEB_IPHONE_DEFAULT_IMEI");
+			strcpy(buffer, "21CN_IPHONE_DEFAULT_IMEI");    ///< 如果mac地址都获取不到，则用默认字符串代替，一般不会进入带分支
 		}
         
 	}
@@ -186,13 +187,14 @@ char* getIMEI(char* buffer)
 }
 
 
+//获取新闻客户端cache，注意：目前仅计算了图片cache
 + (NSString*)getCacheSize
 {
     NSString* cachePath = [self cachePath];
     NSString* fullPath = [NSString stringWithFormat:@"%@/com.news.21cn.-1CNNews/EGOCache", cachePath];
-    uint64_t size = [self fileSizeOnDisk:fullPath];
+    uint64_t size = [self fileSizeOnDisk:fullPath]; ///< 获取图片缓存文件目录大小
     
-    if (size >= 102)
+    if (size >= 102)    ///< 减去文件夹及配置文件所占用的空间大小
     {
         size -= 102;
     }
@@ -207,12 +209,14 @@ char* getIMEI(char* buffer)
 }
 
 
+//获取客户端版本号
 + (NSString*)getCurrentVersion
 {
     return @"v1.3版本";
 }
 
 
+//获取对应路径所占磁盘空间大小
 + (uint64_t)fileSizeOnDisk:(NSString*)path
 {
     if (path && [path length] > 0)

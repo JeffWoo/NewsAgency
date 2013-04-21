@@ -1,10 +1,15 @@
-//
-//  ArticleContentObject.m
-//  Model
-//
-//  Created by chenggk on 13-4-7.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: ArticleContentObject.m
+ *
+ * Description	: 新闻正文结构体，对应服务器返回的json结构
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/6, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "ArticleContentObject.h"
 #import "LSThreadPool.h"

@@ -1,10 +1,15 @@
-//
-//  ImageListViewController.m
-//  Shell
-//
-//  Created by chenggk on 13-4-5.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: ImageListViewController.h
+ *
+ * Description	: 图片新闻列表view controller
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "ImageListViewController.h"
 #import "TMPullingRefreshQuiltViewDelegate.h"
@@ -19,9 +24,9 @@
 
 @interface ImageListViewController ()<TMPullingRefreshQuiltViewDataDelegate, TMPullingRefreshQuiltViewDelegate>
 
-@property (nonatomic, retain) TMPullingRefreshQuiltViewController* tmQuiltViewController;
-@property (nonatomic, retain) NewsChannelObject* currentChannel;
-@property (nonatomic, retain) NSArray* newList;
+@property (nonatomic, retain) TMPullingRefreshQuiltViewController* tmQuiltViewController;   ///< 瀑布流控件
+@property (nonatomic, retain) NewsChannelObject* currentChannel;   ///< 当前新闻频道
+@property (nonatomic, retain) NSArray* newList;                    ///< 新闻列表
 
 @end
 
@@ -55,6 +60,7 @@
 }
 
 
+//在parentView中展现
 - (void)showInViwe:(UIView*)parentView frame:(CGRect)frame
 {
     self.view.frame = frame;
@@ -76,6 +82,7 @@
 }
 
 
+//加载一个新闻频道
 - (void)loadChannel:(NewsChannelObject*)channelObject
 {
     if (self.currentChannel.regionId == channelObject.regionId)
@@ -143,26 +150,27 @@
 // Must return a number of column greater than 0. Otherwise a default value is used.
 - (NSInteger)quiltViewNumberOfColumns:(TMQuiltView *)quiltView
 {
-    return 2;
+    return 2;   ///< 两列图片
 }
 
 
 // Must return margins for all the possible values of TMQuiltViewMarginType. Otherwise a default value is used.
 - (CGFloat)quiltViewMargin:(TMQuiltView *)quilView marginType:(TMQuiltViewMarginType)marginType
 {
-    return 0;
+    return 0;   ///< 图片边框间隔为0
 }
 
 
 // Must return the height of the requested cell
 - (CGFloat)quiltView:(TMQuiltView *)quiltView heightForCellAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 80;
+    return 80;  ///< 图片高度80
 }
 
 
 
 #pragma mark NSNotificationCenter call backfunction
+//新闻列表数据加载结束通知处理函数
 - (void)didReceiveNewListLoadFinish:(NSNotification*)notification
 {
     NSDictionary *dictionary = [notification userInfo];
@@ -184,7 +192,7 @@
     [self.tmQuiltViewController setLoadFinish];
 }
 
-
+//新闻列表加载失败通知处理函数
 - (void)didReceiveNewListLoadFailed
 {
     [self.tmQuiltViewController setLoadFinish];

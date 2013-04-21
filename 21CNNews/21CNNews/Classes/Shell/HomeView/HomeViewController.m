@@ -1,10 +1,15 @@
-//
-//  HomeViewController.m
-//  Shell
-//
-//  Created by chenggk on 13-4-5.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: HomeViewController.m
+ *
+ * Description	: 主页view controller
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "HomeViewController.h"
 #import "UISideBarViewController.h"
@@ -14,10 +19,10 @@
 
 @interface HomeViewController ()
 
-@property (nonatomic, retain) UISideBarViewController* sideBarController;
-@property (nonatomic, retain) UINewsChannelViewController* leftController;
-@property (nonatomic, retain) NewsListViewController* mainController;
-@property (nonatomic, retain) UIUserInfoViewController* rightController;
+@property (nonatomic, retain) UISideBarViewController* sideBarController;       ///< 主页三屏基础控件
+@property (nonatomic, retain) UINewsChannelViewController* leftController;      ///< 左屏：频道列表，热点新闻
+@property (nonatomic, retain) NewsListViewController* mainController;           ///< 中间屏：新闻列表
+@property (nonatomic, retain) UIUserInfoViewController* rightController;        ///< 右屏：用户信息
 
 @end
 

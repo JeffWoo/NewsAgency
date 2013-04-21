@@ -1,10 +1,16 @@
-//
-//  NewsContentViewer.m
-//  Shell
-//
-//  Created by chenggk on 13-4-7.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: NewsContentViewer.m
+ *
+ * Description	: 新闻正文展现view
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/4, chenggk, Create the file
+ ***************************************************************************************
+ **/
+
 
 #import "NewsContentViewer.h"
 #import "ArticleContentObject.h"
@@ -15,9 +21,9 @@
 
 @interface NewsContentViewer ()
 
-@property (nonatomic, retain) UITitleView* titleView;
+@property (nonatomic, retain) UITitleView* titleView;       ///< title栏
 @property (nonatomic, retain) ArticleContentObject* articleContentObject;
-@property (nonatomic, retain) UIWebView* webview;
+@property (nonatomic, retain) UIWebView* webview;           ///< 展现新闻正文的webview
 
 @end
 
@@ -90,9 +96,9 @@
     [self createTitleViewIfNeed];
     [self createWebViewIfNeed];
     
-    [[ArticleContentManager shareInstance] loadArticleContent:articleID imageSize:CGSizeMake(100, 100)];
+    [[ArticleContentManager shareInstance] loadArticleContent:articleID imageSize:CGSizeMake(100, 100)];    ///< 加载对应新闻内容
     
-    [self retain];
+    [self retain];  ///< retain+1，是为了实现生命周期自管理
     [parentViewController presentViewController:self animated:YES completion:nil];
 }
 
@@ -101,7 +107,7 @@
 {
     [self dismissViewControllerAnimated:YES completion:^()
      {
-         [self release];
+         [self release];    ///< 对应- (void)showInUIViewController:(UIViewController*)parentViewController articleID:(int)articleID;中的[self retain];
      }];
 }
 

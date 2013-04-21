@@ -1,10 +1,15 @@
-//
-//  UINewsChannelViewController.m
-//  Shell
-//
-//  Created by chenggk on 13-4-4.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: UINewsChannelViewController.m
+ *
+ * Description	: 新闻频道view controller
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/4, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "UINewsChannelViewController.h"
 #import "UINewsChannelTitleView.h"
@@ -15,9 +20,9 @@
 @interface UINewsChannelViewController ()
 
 @property (nonatomic, retain) UIImageView* bgImageView;
-@property (nonatomic, retain) UINewsChannelTitleView* titleView;
-@property (nonatomic, retain) UINewsChannelTableViewController* tableViewController;
-@property (nonatomic, retain) HotNewListViewController* hotNewListViewController;
+@property (nonatomic, retain) UINewsChannelTitleView* titleView;                        ///< 标题栏
+@property (nonatomic, retain) UINewsChannelTableViewController* tableViewController;    ///< 新闻频道列表
+@property (nonatomic, retain) HotNewListViewController* hotNewListViewController;       ///< 热点新闻
 
 @end
 

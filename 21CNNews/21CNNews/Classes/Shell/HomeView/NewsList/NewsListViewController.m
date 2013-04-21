@@ -1,10 +1,15 @@
-//
-//  NewsListViewController.m
-//  Shell
-//
-//  Created by chenggk on 13-4-5.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: NewsListViewController.h
+ *
+ * Description	: 新闻列表view controller
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/5, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "NewsListViewController.h"
 #import "ArticlelistViewController.h"
@@ -21,9 +26,9 @@
 
 @interface NewsListViewController ()<AriticleListViewDelegate>
 
-@property (nonatomic, retain) UITitleView* titleView;
-@property (nonatomic, retain) ArticlelistViewController* articlelistViewController;
-@property (nonatomic, retain) ImageListViewController* imageListViewController;
+@property (nonatomic, retain) UITitleView* titleView;                                   ///< title栏
+@property (nonatomic, retain) ArticlelistViewController* articlelistViewController;     ///< 普通新闻列表
+@property (nonatomic, retain) ImageListViewController* imageListViewController;         ///< 图片新闻列表
 
 @end
 
@@ -40,7 +45,6 @@
     {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveNewsChannelChanged:) name:DidNewsChannelChanged object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didNewsChannelListUpdata:) name:kDidNewsChannelListUpdata object:nil];
-        [[NewsListManager shareInstance] loadData:0];
         
         self.view.backgroundColor = [UIColor whiteColor];
     }
@@ -93,6 +97,7 @@
 }
 
 
+//初始化数据
 - (void)initData
 {
     NewsChannelObject* channelObject = [[NewsChannelManager shareInstance] getDefaultChannel];
@@ -101,7 +106,7 @@
         return;
     }
     
-    [self loadChannel:channelObject];
+    [self loadChannel:channelObject];   ///< 加载默认频道
 }
 
 
@@ -150,11 +155,12 @@
 }
 
 
+//加载对应频道
 - (void)loadChannel:(NewsChannelObject*)channelObject
 {
     switch (channelObject.articleType)
     {
-        case NewsChannelArticleTypeNormal:
+        case NewsChannelArticleTypeNormal:  ///< 普通样式
         {
             [self createArticlelistViewControllerIfNeed];
             [self.imageListViewController.view removeFromSuperview];
@@ -162,7 +168,7 @@
             [self.view addSubview:self.articlelistViewController.view];
         }
             break;
-        case NewsChannelArticleTypeImage:
+        case NewsChannelArticleTypeImage:   ///< 图片列表样式
         {
             [self createImageListViewController];
             [self.articlelistViewController.view removeFromSuperview];
@@ -179,6 +185,7 @@
 }
 
 
+//新闻列表发生变化响应函数
 - (void)didReceiveNewsChannelChanged:(NSNotification*)notification
 {
     NSDictionary *dictionary = [notification userInfo];
@@ -194,6 +201,7 @@
 }
 
 
+//新闻列表更新响应函数
 - (void)didNewsChannelListUpdata:(NSNotification*)notification
 {
     if (!_articlelistViewController && !_imageListViewController)
@@ -203,10 +211,11 @@
 }
 
 
+//普通新闻列表新闻项被选中时响应函数
 - (void)ariticleListCellDidSelect:(int)ariticleID
 {
     NewsContentViewer* viewer = [[NewsContentViewer alloc] init];
-    [viewer showInUIViewController:self articleID:ariticleID];
+    [viewer showInUIViewController:self articleID:ariticleID];  ///< 展现新闻正文
     [viewer release];
 }
 

@@ -1,10 +1,15 @@
-//
-//  UINewsChannelTableViewController.m
-//  Shell
-//
-//  Created by chenggk on 13-4-4.
-//  Copyright (c) 2013年 21cn. All rights reserved.
-//
+/*
+ **************************************************************************************
+ * Copyright (C) 2005-2011 UC Mobile Limited. All Rights Reserved
+ * File			: UINewsChannelTableViewController.m
+ *
+ * Description	: 新闻频道table view controller
+ *
+ * Author		: ioscoder
+ *
+ * History		: Creation, 2013/4/4, chenggk, Create the file
+ ***************************************************************************************
+ **/
 
 #import "UINewsChannelTableViewController.h"
 #import "UINewsChannelTableCell.h"
@@ -15,7 +20,7 @@
 @interface UINewsChannelTableViewController ()
 
 @property (nonatomic, retain) UITableView* tableView;
-@property (nonatomic, retain) NewChannelList* dataList;
+@property (nonatomic, retain) NewChannelList* dataList; ///< 频道数据列表
 
 @end
 
@@ -33,7 +38,7 @@
         
         self.view.frame = frame;
         
-        self.dataList = [[NewsChannelManager shareInstance] getNewChannelList];
+        self.dataList = [[NewsChannelManager shareInstance] getNewChannelList]; ///< 初始化频道数据
         
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         _tableView.separatorColor = [UIColor colorWithRed:0x1A / 255.0f green:0x1C / 255.0f blue:0x20 / 255.0f alpha:1];
@@ -110,7 +115,8 @@
 }
 
 
-#pragma mark NewsChannelManagerDelegate
+#pragma mark NewsChannelManager Call Back
+//更新频道数据列表
 - (void)didNewsChannelListUpdata
 {
     self.dataList = [[NewsChannelManager shareInstance] getNewChannelList];
